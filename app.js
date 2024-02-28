@@ -1,7 +1,7 @@
 // app.js
 const express = require("express");
-const cors = require('cors');
-const db = require('./server'); 
+const cors = require("cors");
+const db = require("./server");
 const app = express();
 const port = 3003;
 
@@ -10,16 +10,16 @@ app.use(express.json());
 app.use(cors());
 
 // Importation des routes
-const getRoutes = require('./routes/get');
-const deleteRoutes = require('./routes/delete');
-const postRoutes = require('./routes/post');
-const updateRoutes = require('./routes/update');
+const getRoutes = require("./routes/get");
+const deleteRoutes = require("./routes/delete");
+const postRoutes = require("./routes/post");
+const updateRoutes = require("./routes/update");
 
 // Utilisation des routes
-app.use('/get', getRoutes);
-app.use('/delete', deleteRoutes);
-app.use('/post', postRoutes);
-app.use('/update', updateRoutes);
+app.use("/get", getRoutes);
+app.use("/delete", deleteRoutes);
+app.use("/post", postRoutes);
+app.use("/update", updateRoutes);
 
 // Connexion à la base de données
 db.connect((err) => {

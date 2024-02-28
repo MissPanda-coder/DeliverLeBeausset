@@ -1,6 +1,6 @@
-<?php 
-$title="products";
-include '../elementPage/head.php'; 
+<?php
+$title = "products";
+include '../elementPage/head.php';
 include '../elementPage/navBar.php';
 ?>
 
@@ -13,5 +13,5 @@ include '../elementPage/navBar.php';
 
 
 
-<?php 
-include '../elementPage/footer.php';?>
+<?php
+include '../elementPage/footer.php'; ?>

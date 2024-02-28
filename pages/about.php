@@ -1,7 +1,8 @@
 <?php
 $title = "about";
-include './elementPage/navBar.php';
-include './elementPage/head.php'; ?>
+include '../elementPage/head.php';
+include '../elementPage/navBar.php'; ?>
+
 
 <div class="container">
     <div class=" row text-secondary presentation_text-layout">

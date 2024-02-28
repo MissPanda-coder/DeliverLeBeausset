@@ -9,3 +9,43 @@
 // .card-text{
 //     height:30px;
 // }
+
+
+.cart {
+    position: relative;
+    display: inline-block;
+    width:30%;
+}
+
+.cart-icon {
+
+}
+
+.cart .cart-actions {
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.cart .cart-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.cart .cart-actions input {
+    width: 40px;
+    text-align: center;
+}
+
+.cart .cart-actions .hidden {
+    display: none;
+}
+
