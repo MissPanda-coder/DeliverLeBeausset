@@ -1,0 +1,56 @@
+@import "_btn";
+@import "_variables";
+@import "_footer";
+@import "_home";
+@import "_shops";
+@import "_about";
+@import "_navbar";
+@import "_cgv";
+@import "_pdc";
+@import "_login";
+@import "_register";
+@import "_forgot";
+@import "_products";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nexa-Heavy';
+    src: url(../../fonts/Nexa-Heavy.ttf);
+}
+
+
+body, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, textarea, p, blockquote, th, td{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  fieldset,img { 
+    border:0;
+  }
+  ol,ul {
+    list-style:none;
+  }
+  li{
+    text-decoration: none;
+    list-style: none;
+  }
+  caption,th {
+    text-align:left;
+  }
+  q:before {
+    content:"\00AB";
+    margin-right: 10px;
+  }
+  q:after{
+    content:"\00BB";
+   margin-left:10px;
+  }
+ 
+
+ 

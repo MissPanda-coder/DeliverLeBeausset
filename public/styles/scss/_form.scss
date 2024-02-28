@@ -1,0 +1,43 @@
+
+
+@mixin formLayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    margin:auto;
+    
+}
+
+@mixin formTitle{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+@mixin formFieldLabel{
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+@mixin formFieldInputSelect{
+    border: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+@mixin formSmall{
+    color: var(--error-color);
+    font-size: 9px;   
+}

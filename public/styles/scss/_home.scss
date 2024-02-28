@@ -1,0 +1,57 @@
+#home {
+    width: 100%;
+  }
+  
+  #home_photo {
+    background-image: url("../../img/autres/beausset.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 24rem; 
+    width: 100%;
+  }
+  .home_description-block {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+  }
+  .home_description-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    margin:auto;
+    width: 90%;
+  }
+  
+  .home_description {
+    font-family: "Roboto-Regular", sans-serif;
+    text-align: center;
+    line-height: 2rem;
+    text-wrap: balance;
+  }
+  
+  h1 {
+    overflow-wrap: break-word;
+    margin-bottom: 2rem !important;
+  }
+  
+  #home_text {
+  text-align: center;
+  }
+
+  .line{
+    width:40%;
+    height:0.21rem;
+    background-color: $c-purple;
+   margin: 20px auto 49px auto;
+  }
+
+
+  /* RESPONSIVE */
+  @media screen and (max-width: 768px) { 
+    #home_photo {
+      height: 15rem;
+    }
+  }
+  
+  
+  

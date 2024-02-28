@@ -1,0 +1,100 @@
+
+@import "_variables";
+@import "_btn";
+@import "_form";
+
+#login{
+   @include formLayout;
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1000; 
+    display: none; 
+}
+  
+
+
+#loginForm {
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+ 
+}
+
+#loginForm h2 {
+  @include formTitle;
+  
+}
+
+.form_field {
+    margin-bottom: 7px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+.form_field-center{
+  text-align: center;
+}
+
+.form_field label {
+ @include formFieldLabel;
+}
+
+.form_field input, .form_field select {
+    @include formFieldInputSelect;
+}
+
+.form_field input:focus, .form_field select:focus {
+    outline: none;
+}
+
+.form_field.error input {
+    border-color: $error-color;
+}
+.form_field.error select {
+  border : 2px solid $error-color;
+}
+
+.form_field.success input {
+    border-color: $success-color;
+}
+.form_field.success select {
+  border : 2px solid $success-color;
+}
+
+.form_field small {
+   @include formSmall; 
+}
+
+.field_icon {
+    float: right;
+    position: relative;
+    top: 35px;
+    right: 10px;
+    z-index: 9;
+    color: black;
+    width:20px;
+    height:20px;
+  }
+
+  .forgot_password:visited,
+  .register_button:visited,
+  .forgot_password:active,
+  .register_button:active {
+      color: inherit;
+      text-decoration: none;
+  }
+
+  .login_button {
+    @include btn;
+    text-align: center;
+    margin: 20px auto;
+
+    &:hover {
+      @include hover;
+    }
+  }

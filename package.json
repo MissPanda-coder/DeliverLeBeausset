@@ -1,0 +1,24 @@
+{
+  "name": "deliver",
+  "version": "1.0.0",
+  "description": "Livraison gratuite des commerçants Beaussetans pour les Beaussetans",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "sass": "sass -w public/styles/scss/style.scss public/styles/css/style.css"
+  },
+  "author": "Adeline",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "js": "^0.1.0",
+    "mysql2": "^3.9.2",
+    "nodemon": "^3.1.0",
+    "php": "^1.0.2",
+    "sass": "^1.71.1"
+  }
+}
+

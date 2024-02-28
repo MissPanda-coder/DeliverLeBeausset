@@ -1,0 +1,33 @@
+@import "_btn";
+@import "_variables";
+
+#shops{
+    position: relative;
+    width:100%;
+}
+
+#searchBar{
+  margin:15px auto;
+  width: 60%;
+  border:1px solid black;
+}
+
+.form_select{
+    margin: 0!important;
+    padding: 0 !important;
+   
+}
+
+#categories{
+    border: none;
+
+}
+
+#searchBar_input{
+    width:100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+}
+
+

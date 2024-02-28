@@ -1,0 +1,24 @@
+#confidentialPolicy{
+    width:100%;
+  
+}
+
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2.5rem !important;
+}
+
+h5 {
+    margin-top: 1.5rem !important;
+}
+.confidential_text {
+    width: 95%;
+    margin: 1rem auto;
+    padding: 0 1.25rem;
+    line-height: 2rem;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+}
+.confidential_update {
+    margin: 1rem auto; 
+}
