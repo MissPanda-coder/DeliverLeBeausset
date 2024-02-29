@@ -1,51 +1,33 @@
 @import "_btn";
 @import "_variables";
 
-// #products{
-//     position: relative;
-//     width:100%; 
-// }
-
-// .card-text{
-//     height:30px;
-// }
-
-
-.cart {
+#products{
     position: relative;
-    display: inline-block;
-    width:30%;
+    width:100%; 
 }
 
-.cart-icon {
-
+.product-container{
+   width:60%;
+   margin-top:25px;
+   margin-left:20px;
 }
 
-.cart .cart-actions {
-    position: absolute;
-    top: 30px;
-    left: -120px;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: none;
+.product-image,
+.product-details{
+    margin-left : 15px;
+    margin-top:20px;
 }
 
-.cart .cart-actions button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
+.cart{
+    display: block;
+    margin-left : 250px;
+    margin-bottom: 20px;
 }
 
-.cart .cart-actions input {
-    width: 40px;
-    text-align: center;
+.btn-cart{
+    @include btn;
+left :550px;
+bottom : 20px;
 }
 
-.cart .cart-actions .hidden {
-    display: none;
-}
 

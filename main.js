@@ -63,12 +63,63 @@ function fetchProducts(url) {
       .catch(error => console.error("Error:", error));
 }
 
-
 init();
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const pageName = document.getElementsByTagName("main")[0].id;
-//   if (pageName == "products") {
-//     init();
-//   }
-// });
+
+//CART NAVBAR
+let increment = 0;
+const countElement = document.createElement("span");
+countElement.classList.add("count-nb");
+countElement.textContent = increment; 
+
+const navBar = document.querySelector(".cart-span"); 
+navBar.appendChild(countElement);
+
+const buttAdd = document.querySelectorAll('.btn-cart')
+buttAdd.forEach(e => {
+    e.addEventListener('click', () => {
+        increment++;
+        updateCounter();
+    })
+})
+
+function updateCounter() {
+    if (increment > 0) {
+        countElement.textContent = increment;
+        countElement.style.display = "block"; 
+    } else {
+        countElement.style.display = "none"; 
+    }
+
+}
+
+
+
+//CART
+// function initCart() {
+//   let = document.querySelectorAll(".btn-cart");
+  
+//   iddepartmentLinks.forEach(e => {
+//       e.addEventListener('click', () => {
+//         let iddepartment = e.value
+//         console.log(iddepartment)
+          
+//           let url = `http://localhost:3003/get/products/${iddepartment}`;
+//           fetchProducts(url);
+//       });
+//   });
+// }
+
+// function fetchProducts(url) {
+//   fetch(url)
+//       .then(response => response.json())
+//       .then(data =>{  
+//       const jsonData = JSON.stringify(data);
+//       const encodedData = encodeURIComponent(jsonData);
+//       window.location.href = `cart?data=${encodedData}`;})
+//       .catch(error => console.error("Error:", error));
+// }
+
+
+// initCart();
+

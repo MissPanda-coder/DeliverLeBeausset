@@ -13,7 +13,7 @@
             <li><a href="shops">Boutiques</a></li>
             <li><a href="about">A propos</a></li>
             <li><button class="login_button" href="login">Identifiez-vous</button></li>
-            <a href="cart"><img class="cart_img" src="./public/img/outils/panierb.png" alt="image d'un panier pour passer commande"></a>
+            <a href="cart" class="cart-span"><img class="cart_img" src="./public/img/outils/panierb.png" alt="image d'un panier pour passer commande"></a>
         </ul>
     </nav>
 

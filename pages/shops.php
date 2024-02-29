@@ -212,27 +212,6 @@ include '../elementPage/navBar.php'; ?>
   </div>
 </div>
 
-<div class="cart">
-  <button class="cart-icon" onclick="toggleCart()">
-    <i class="fa fa-shopping-cart"></i>
-  </button>
-  <div class="cart-actions hidden">
-    <button class="delete-icon" onclick="deleteCartItem()">
-      <i class="fa fa-trash"></i>
-    </button>
-    <input type="number" class="item-quantity" value="1" min="1">
-    <button class="plus-icon" onclick="increaseQuantity()">
-      <i class="fa fa-plus"></i>
-    </button>
-    <button class="minus-icon hidden" onclick="decreaseQuantity()">
-      <i class="fa fa-minus"></i>
-    </button>
-  </div>
-</div>
-
-
-
-
 
 <?php
-include '../elementPage/footer.php'; ?><div class="cart">
+include '../elementPage/footer.php'; ?>

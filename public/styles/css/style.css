@@ -539,6 +539,27 @@ header {
     opacity: 1;
   }
 }
+.cart_img {
+  position: relative;
+}
+
+.count-nb {
+  content: attr(data-count);
+  position: absolute;
+  float: right;
+  top: 10px;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: rgb(146, 101, 218);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .cart_img {
     height: 2.5rem !important;
@@ -1155,38 +1176,57 @@ h5, .h5 {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
+#products {
+  position: relative;
+  width: 100%;
+}
+
+.product-container {
+  width: 60%;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.product-image,
+.product-details {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
 .cart {
+  display: block;
+  margin-left: 250px;
+  margin-bottom: 20px;
+}
+
+.btn-cart {
+  width: auto;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  width: 30%;
-}
-
-.cart .cart-actions {
-  position: absolute;
-  top: 30px;
-  left: -120px;
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: none;
-}
-
-.cart .cart-actions button {
-  background-color: transparent;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background: rgb(146, 101, 218);
+  background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
   border: none;
-  cursor: pointer;
-  padding: 5px;
+  left: 550px;
+  bottom: 20px;
 }
-
-.cart .cart-actions input {
-  width: 40px;
-  text-align: center;
+.btn-cart:before {
+  height: 0%;
+  width: 2px;
 }
-
-.cart .cart-actions .hidden {
-  display: none;
+.btn-cart:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 /*!
