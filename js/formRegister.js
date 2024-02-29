@@ -12,6 +12,19 @@ const passwordEl = document.forms.register.password;
 const confPassEl = document.forms.register.passwordconfirm;
 const cgvEl = document.forms.register.cgv;
 
+document.querySelectorAll(".toggle-password").forEach(function (element) {
+  element.addEventListener("click", function () {
+    this.classList.toggle("fa-eye-slash");
+    this.classList.toggle("fa-eye");
+    const input = document.querySelector("#password");
+    if (input.getAttribute("type") === "password") {
+      input.setAttribute("type", "text");
+    } else {
+      input.setAttribute("type", "password");
+    }
+  });
+});
+
 function isRequired(elementValue) {
   if (elementValue == "") {
     return false;
@@ -81,8 +94,8 @@ function isCgvValid(cgvCheckbox) {
 // J'ai besoin d'une fonction qui permette d'afficher les erreurs en rouge
 function showError(input, message) {
   const formField = input.parentElement;
-  formField.classList.remove("success"); // class css
-  formField.classList.add("error"); // class css
+  formField.classList.remove("success"); 
+  formField.classList.add("error"); 
   const errorEl = formField.querySelector("small");
   errorEl.textContent = message;
 }
@@ -95,7 +108,7 @@ function showSuccess(input) {
   errorEl.textContent = "";
 }
 
-const checkName = () => {
+export function checkName() {
   let valid = false;
   const min = 2,
     max = 25;
@@ -114,8 +127,8 @@ const checkName = () => {
     valid = true;
   }
   return valid;
-};
-const checkFirstName = () => {
+}
+export function checkFirstName() {
   let valid = false;
   const min = 2,
     max = 25;
@@ -137,9 +150,9 @@ const checkFirstName = () => {
     valid = true;
   }
   return valid;
-};
+}
 
-const checkStreetNb = () => {
+export function checkStreetNb() {
   let valid = false;
   const min = 2,
     max = 4;
@@ -154,16 +167,16 @@ const checkStreetNb = () => {
   } else if (!isStreetNbValid(street_number)) {
     showError(
       streetNumberEl,
-      `Le nunméro de rue ne doit contenir que des chiffres".`
+      `Le numéro de rue ne doit contenir que des chiffres.`
     );
   } else {
     showSuccess(streetNumberEl);
     valid = true;
   }
   return valid;
-};
+}
 
-const checkStreetName = () => {
+export function checkStreetName() {
   const street = streetNameEl.value.trim();
   if (!isRequired(street)) {
     showError(streetNameEl, "Le champ ne peut pas être vide");
@@ -172,9 +185,9 @@ const checkStreetName = () => {
     showSuccess(streetNameEl);
     return true;
   }
-};
+}
 
-const checkPostalCode = () => {
+export function checkPostalCode() {
   const postalCode = postalCodeEl.value.trim();
   if (!isRequired(postalCode)) {
     showError(postalCodeEl, "Le champ ne peut pas être vide");
@@ -186,9 +199,9 @@ const checkPostalCode = () => {
     showSuccess(postalCodeEl);
     return true;
   }
-};
+}
 
-const checkCity = () => {
+export function checkCity() {
   const city = cityEl.value.trim();
   if (!isRequired(city)) {
     showError(cityEl, "Le champ ne peut pas être vide");
@@ -200,9 +213,9 @@ const checkCity = () => {
     showSuccess(cityEl);
     return true;
   }
-};
+}
 
-const checkPhone = () => {
+export function checkPhone() {
   const phone = phoneEl.value.trim();
   if (!isRequired(phone)) {
     showError(phoneEl, "Le champ ne peut pas être vide");
@@ -216,7 +229,7 @@ const checkPhone = () => {
   }
 };
 
-const checkEmail = () => {
+export function checkEmail(){
   let valid = false;
   const email = emailEl.value.trim();
   if (!isRequired(email)) {
@@ -232,7 +245,7 @@ const checkEmail = () => {
   }
   return valid;
 };
-const checkDob = () => {
+export function checkDob() {
   let valid = false;
   const dobval = dobEl.value;
   const dob = new Date(dobval);
@@ -252,7 +265,7 @@ const checkDob = () => {
   }
   return valid;
 };
-const checkPass = () => {
+export function checkPass() {
   let valid = false;
   const pass = passwordEl.value.trim();
   if (!isRequired(pass)) {
@@ -268,7 +281,7 @@ const checkPass = () => {
   }
   return valid;
 };
-const confPass = () => {
+export function confPass() {
   let valid = false;
   const pass = passwordEl.value.trim();
   const conf = confPassEl.value.trim();
@@ -282,7 +295,7 @@ const confPass = () => {
   }
   return valid;
 };
-const checkCgv = () => {
+export function checkCgv() {
   const cgvCheckbox = cgvEl;
   if (!isCgvValid(cgvCheckbox)) {
     showError(
@@ -296,96 +309,3 @@ const checkCgv = () => {
   }
 };
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let nameOk = checkName(),
-    firstNameOk = checkFirstName(),
-    streetNumberOk = checkStreetNb(),
-    streetNameOk = checkStreetName(),
-    postalCodeOk = checkPostalCode(),
-    cityOk = checkCity(),
-    phoneOk = checkPhone(),
-    emailOk = checkEmail(),
-    isAgeOk = checkDob(),
-    isPassOk = checkPass(),
-    isConfOk = confPass(),
-    iscgvOk = checkCgv();
-
-  let isFormValid =
-    nameOk &&
-    firstNameOk &&
-    streetNumberOk &&
-    streetNameOk &&
-    postalCodeOk &&
-    cityOk &&
-    phoneOk &&
-    emailOk &&
-    isAgeOk &&
-    isPassOk &&
-    isConfOk &&
-    iscgvOk;
-  if (isFormValid) {
-    console.log("Tout est Ok pour l'envoi");
-  }
-});
-
-// Techniquement, vous attendrez que les utilisateurs
-// suspendent la saisie pendant un petit laps de temps ou arrêtent de taper avant de valider la saisie.
-const debounce = (fn, delay = 500) => {
-  let timeoutId;
-  return (...args) => {
-    // cancel the previous timer
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-    }
-    // setup a new timer
-    timeoutId = setTimeout(() => {
-      fn.apply(null, args);
-    }, delay);
-  };
-};
-
-form.addEventListener(
-  "input",
-  debounce(function (e) {
-    switch (e.target.id) {
-      case "name":
-        checkName();
-        break;
-      case "first_name":
-        checkFirstName();
-        break;
-      case "street_number":
-        checkStreetNb();
-        break;
-      case "street_name":
-        checkStreetName();
-        break;
-      case "postal_code":
-        checkPostalCode();
-        break;
-      case "city":
-        checkCity();
-        break;
-      case "phone":
-        checkPhone();
-        break;
-      case "email":
-        checkEmail();
-        break;
-      case "dob":
-        checkDob();
-        break;
-      case "password":
-        checkPass();
-        break;
-      case "passwordconfirm":
-        confPass();
-        break;
-      case "cgv":
-        checkCgv();
-        break;
-    }
-  })
-);

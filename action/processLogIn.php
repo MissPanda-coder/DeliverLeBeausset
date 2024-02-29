@@ -1,41 +1,45 @@
 <?php
 
+const LOGIN_ERROR_REQUIRED = "Veuillez renseigner ce champ";
+const LOGIN_ERROR_EMAIL = "L'email n'est pas valide";
+const LOGIN_SUCCESS_MESSAGE = "Vous êtes connecté."; 
 
-const ERROR_REQUIRED = "Veuillez renseigner ce champ";
-const ERROR_EMAIL = "L'email n'est pas valide";
-const SUCCESS_MESSAGE = "Un email de réinitialisation de mot de passe a été envoyé.";
-
-$errors = [];
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+$errors_login = []; 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) { 
     $_POST = filter_input_array(INPUT_POST, [
-        'email_forgot' => FILTER_SANITIZE_EMAIL,
+        'email' => FILTER_SANITIZE_EMAIL, 
+        'password' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
     ]);
 
-    $email_forgot = $_POST['email_forgot'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $password = $_POST['password'] ?? '';
 
-    if (!$email_forgot) {
-        $errors['email_forgot'] = ERROR_REQUIRED;
-    } 
-    elseif (!filter_var($email_forgot, FILTER_VALIDATE_EMAIL)) {
-        $errors['email_forgot'] = ERROR_EMAIL;
-    } 
-    else {
-        $to = $email_forgot;
-        $subject = "Réinitialisation de mot de passe";
-        $message = "Cliquez sur ce lien pour réinitialiser votre mot de passe : [lien de réinitialisation]";
-        $headers = "From: votre_email@example.com";
+    if (!$email) {
+        $errors_login['email'] = LOGIN_ERROR_REQUIRED;
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors_login['email'] = LOGIN_ERROR_EMAIL;
+    }
 
-        if (mail($to, $subject, $message, $headers)) {
-            $success_message = SUCCESS_MESSAGE;
-        } else {
-            $errors['email_forgot'] = "Une erreur s'est produite lors de l'envoi de l'email de réinitialisation.";
-        }
+    if (!$password) {
+        $errors_login['password'] = LOGIN_ERROR_REQUIRED;
+    }
+
+    if (empty($errors_login)) {
+        
     }
 }
 
+if (!empty($errors_login)) {
+    foreach ($errors_login as $error_field => $error_message) {
+        echo "$error_field : $error_message <br>";
+    }
+}
 
+if (isset($success_message)) {
+    echo $success_message;
+}
 ?>
+
 
 
 

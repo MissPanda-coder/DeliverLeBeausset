@@ -1,5 +1,4 @@
 
-
 @mixin formLayout{
     display: flex;
     flex-direction: column;
@@ -72,8 +71,6 @@
     display: block;
     width: 100%;
 }
-
-
 
 @mixin formSmall{
     color: var(--error-color);

@@ -46,7 +46,7 @@
 
 
 <div id="forgotPassword">
-    <form id="forgotPasswordForm" action="processFPw.php" method="POST">
+    <form id="forgotPasswordForm" action="processFPw.php" method="POST" name="forgot">
         <h2 class="text-secondary">Mot de passe oublié</h2>
         <div class="form_field">
             <label for="email_forgot">Email</label>
