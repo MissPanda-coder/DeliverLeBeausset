@@ -1,7 +1,8 @@
 <?php
 $title = "admin";
 include '../elementPage/head.php';
-include '../elementPage/navBar.php'; ?>
+include '../elementPage/navBar.php';
+?>
 
 <div class="container">
     <h1>Gestion des Données</h1>
@@ -26,9 +27,7 @@ include '../elementPage/navBar.php'; ?>
 
 
 
-</div>
-
-
 <?php
 
-include '../elementPage/footer.php'; ?>
+include '../elementPage/footer.php';
+?>

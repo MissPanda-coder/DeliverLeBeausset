@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    
     "sass": "sass -w public/styles/scss/style.scss public/styles/css/style.css"
   },
   "author": "Adeline",
@@ -21,4 +20,3 @@
     "sass": "^1.71.1"
   }
 }
-

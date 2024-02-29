@@ -12,6 +12,6 @@ include '../elementPage/navBar.php';
 </div>
 
 
-
+<script src="js/showProducts.js"></script>
 <?php
 include '../elementPage/footer.php'; ?>

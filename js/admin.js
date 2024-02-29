@@ -1,9 +1,10 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const entitySelect = document.getElementById("entitySelect");
   const actionSelect = document.getElementById("actionSelect");
   const formContainer = document.getElementById("formContainer");
 
-  // Définir les champs pour chaque entité
+  // Définition des champs pour chaque entité
   const entityFields = {
     stores: [
       "name",
@@ -43,14 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function loadForm(entity, action) {
-    // Supprimez le formulaire précédent s'il existe
+    // Suppression du formulaire précédent s'il existe
     formContainer.innerHTML = "";
 
-    // Créez le formulaire correspondant à l'entité sélectionnée
     const form = document.createElement("form");
     form.id = "entityForm";
 
-    // Ajoutez les champs correspondants à l'entité sélectionnée
     entityFields[entity].forEach((field) => {
       const label = document.createElement("label");
       label.textContent = field.charAt(0).toUpperCase() + field.slice(1);
@@ -66,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
       form.appendChild(div);
     });
 
-    // Ajoutez le bouton de soumission
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
     submitButton.textContent = action;

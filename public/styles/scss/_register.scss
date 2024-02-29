@@ -3,14 +3,20 @@
 @import "_btn";
 
 #register{
- @include formLayout;
- position: fixed;
+ @include formLayoutRegister;
+ position: fixed; 
+ top: 50%; 
+ left: 50%;
+ transform: translate(-50%, -50%); 
  z-index: 1000; 
  display: none; 
+ max-height: 80%;
+ overflow-y: auto;
+ overflow-x: hidden;
 }
 
 #registerForm {
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 #registerForm h2 {
@@ -18,16 +24,17 @@
 }
 
 .form_field {
-    margin-bottom: 5px;
+     margin-bottom: 5px;
+     position:relative;
 
 }
 
 .form_field label {
-@include formFieldLabel;
+@include formFieldLabelRegister;
 }
 
 .form_field input, .form_field select {
-   @include formFieldInputSelect;
+   @include formFieldInputSelectRegister;
 }
 
 .form_field input:focus, .form_field select:focus {
@@ -55,20 +62,32 @@
 }
 
 
-.field_icon {
-    float: right;
-    position: relative;
-    top: -35px;
-    right: 10px;
+.field-icon-register {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 60px;
+    right: 35px;
     z-index: 2;
     color: black;
   }
 
 
-  .register_send-button {
+  .form-field-checkobox{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+
+  .checkbox{
+    display:inline-block;
+    margin-right:7px;
+  }
+
+
+  .register-send-button {
     @include btn;
-    text-align: center;
-    margin: 20px auto;
+    margin: 15px 40%;
+  
 
     &:hover {
       @include hover;

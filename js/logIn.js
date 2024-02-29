@@ -9,13 +9,4 @@ export function displayLogin() {
     logIn.style.display = "none";
   }
 
-  if (logIn.style.display === "none" || forgot.style.display === "") {
-    logIn.style.display = "block";
-    forgot.style.display = "none";
-    register.style.display = "none";
-  } else {
-    logIn.style.display = "none";
-    forgot.style.display = "none";
-    register.style.display = "none";
-  }
 }

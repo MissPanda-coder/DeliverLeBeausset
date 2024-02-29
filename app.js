@@ -1,4 +1,4 @@
-// app.js
+
 const express = require("express");
 const cors = require("cors");
 const db = require("./server");
@@ -15,11 +15,13 @@ const deleteRoutes = require("./routes/delete");
 const postRoutes = require("./routes/post");
 const updateRoutes = require("./routes/update");
 
+
 // Utilisation des routes
 app.use("/get", getRoutes);
 app.use("/delete", deleteRoutes);
 app.use("/post", postRoutes);
 app.use("/update", updateRoutes);
+
 
 // Connexion à la base de données
 db.connect((err) => {

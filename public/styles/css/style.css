@@ -207,19 +207,33 @@ h1, .h1 {
   width: 100%;
 }
 
-#searchBar {
-  margin: 15px auto;
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   width: 60%;
-  border: 1px solid black;
+  border: 1px solid rgb(146, 101, 218);
+  border-radius: 5%;
+  margin: 15px auto;
 }
 
-.form_select {
+.searchBar-container {
+  display: flex;
+  flex: 1;
+}
+
+.searchBar-text {
+  flex: 3;
+}
+
+.searchBar-glass {
+  flex: 0;
+}
+
+.searchBar-select {
   margin: 0 !important;
   padding: 0 !important;
-}
-
-#categories {
-  border: none;
 }
 
 #searchBar_input {
@@ -229,6 +243,34 @@ h1, .h1 {
   border: none;
 }
 
+#searchBar_input:focus {
+  outline: none !important;
+}
+
+#categories {
+  border: none;
+  margin-top: 0.2rem;
+}
+
+#categories:focus {
+  outline: none;
+}
+
+.search_button {
+  border: none;
+}
+
+.categories_button {
+  border: none;
+  background-color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .search-wrapper {
+    width: 90%;
+  }
+}
 .btnSearch {
   width: auto;
   height: 40px;
@@ -690,15 +732,12 @@ h5, .h5 {
   text-transform: uppercase;
 }
 
-.form_field {
+.form-field-center {
   margin-bottom: 7px;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
   font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
-.form_field-center {
   text-align: center;
 }
 
@@ -743,15 +782,13 @@ h5, .h5 {
   font-size: 9px;
 }
 
-.field_icon {
-  float: right;
-  position: relative;
-  top: 35px;
-  right: 10px;
-  z-index: 9;
+.field-icon-logIn {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50px;
+  right: 35px;
+  z-index: 2;
   color: black;
-  width: 20px;
-  height: 20px;
 }
 
 .forgot_password:visited,
@@ -782,7 +819,7 @@ h5, .h5 {
   background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
   border: none;
   text-align: center;
-  margin: 20px auto;
+  margin: auto;
 }
 .login_button:before {
   height: 0%;
@@ -833,14 +870,19 @@ h5, .h5 {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   width: 600px;
-  margin: auto;
   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1000;
   display: none;
+  max-height: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #registerForm {
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 
 #registerForm h2, #registerForm .h2 {
@@ -852,19 +894,20 @@ h5, .h5 {
 
 .form_field {
   margin-bottom: 5px;
+  position: relative;
 }
 
 .form_field label {
   display: block;
   color: #777;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .form_field input, .form_field select {
   border: solid 2px #f0f0f0;
   border-radius: 3px;
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 5px;
+  margin-bottom: 2px;
   font-size: 14px;
   display: block;
   width: 100%;
@@ -895,16 +938,26 @@ h5, .h5 {
   font-size: 9px;
 }
 
-.field_icon {
-  float: right;
-  position: relative;
-  top: -35px;
-  right: 10px;
+.field-icon-register {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 60px;
+  right: 35px;
   z-index: 2;
   color: black;
 }
 
-.register_send-button {
+.form-field-checkobox {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.register-send-button {
   width: auto;
   height: 40px;
   color: #ffffff;
@@ -923,17 +976,16 @@ h5, .h5 {
   background: rgb(146, 101, 218);
   background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
   border: none;
-  text-align: center;
-  margin: 20px auto;
+  margin: 15px 40%;
 }
-.register_send-button:before {
+.register-send-button:before {
   height: 0%;
   width: 2px;
 }
-.register_send-button:hover {
+.register-send-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-.register_send-button:hover {
+.register-send-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 

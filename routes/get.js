@@ -2,6 +2,15 @@ const express = require("express");
 const router = express.Router();
 const db = require("../server");
 
+//fetch la page admin
+// app.get('/dashboard', function(req, res) {
+//   if (req.session && req.session.isAdmin) {
+//       res.render('dashboard', { isAdmin: true });
+//   } else {
+//       res.redirect('/login');
+//   }
+// });
+
 // Fetch tous les magasins
 router.get("/shops", (req, res) =>
   db.query("SELECT * FROM shops", (err, results) => {

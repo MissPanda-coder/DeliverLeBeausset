@@ -28,17 +28,15 @@
   
 }
 
-.form_field {
+.form-field-center {
     margin-bottom: 7px;
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
     font-size: clamp(1rem, 5vw, 1.2rem);
+    text-align: center;
 }
 
-.form_field-center{
-  text-align: center;
-}
 
 .form_field label {
  @include formFieldLabel;
@@ -70,15 +68,13 @@
    @include formSmall; 
 }
 
-.field_icon {
-    float: right;
-    position: relative;
-    top: 35px;
-    right: 10px;
-    z-index: 9;
-    color: black;
-    width:20px;
-    height:20px;
+.field-icon-logIn {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50px;
+  right: 35px;
+  z-index: 2;
+  color: black;
   }
 
   .forgot_password:visited,
@@ -92,7 +88,7 @@
   .login_button {
     @include btn;
     text-align: center;
-    margin: 20px auto;
+    margin: auto;
 
     &:hover {
       @include hover;
