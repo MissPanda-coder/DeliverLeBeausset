@@ -66,7 +66,6 @@ document.forms.login.addEventListener("input", (e) => {
   }
 });
 
-
 //FORGOT PASSWORD
 import { displayForgot } from "./js/forgot.js";
 document
@@ -219,54 +218,38 @@ function fetchProducts(url) {
 init();
 
 //CART NAVBAR
-let increment = 0;
+const cart = new Cart();
 const countElement = document.createElement("span");
 countElement.classList.add("count-nb");
-countElement.textContent = increment;
-
 const navBar = document.querySelector(".cart-span");
 navBar.appendChild(countElement);
 
-const buttAdd = document.querySelectorAll(".btn-cart");
-buttAdd.forEach((e) => {
-  e.addEventListener("click", () => {
-    increment++;
-    updateCounter();
+
+const addToCartButtons = document.querySelectorAll(".btn-cart");
+addToCartButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+ 
+    const productId = event.target.dataset.productId;
+    const productName = event.target.dataset.productName;
+    const productPrice = parseFloat(event.target.dataset.productPrice);
+
+  
+    const product = {
+      id: productId,
+      name: productName,
+      price: productPrice,
+      quantity: 1
+    };
+
+    cart.addToCart(product);
+
+    
+    const cartItemCount = cart.getNumberProduct();
+    if (cartItemCount > 0) {
+      countElement.textContent = cartItemCount;
+      countElement.style.display = "block";
+    } else {
+      countElement.style.display = "none";
+    }
   });
 });
-
-function updateCounter() {
-  if (increment > 0) {
-    countElement.textContent = increment;
-    countElement.style.display = "block";
-  } else {
-    countElement.style.display = "none";
-  }
-}
-
-//CART
-// function initCart() {
-//   let = document.querySelectorAll(".btn-cart");
-
-//   iddepartmentLinks.forEach(e => {
-//       e.addEventListener('click', () => {
-//         let iddepartment = e.value
-//         console.log(iddepartment)
-
-//           let url = `http://localhost:3003/get/products/${iddepartment}`;
-//           fetchProducts(url);
-//       });
-//   });
-// }
-
-// function fetchProducts(url) {
-//   fetch(url)
-//       .then(response => response.json())
-//       .then(data =>{
-//       const jsonData = JSON.stringify(data);
-//       const encodedData = encodeURIComponent(jsonData);
-//       window.location.href = `cart?data=${encodedData}`;})
-//       .catch(error => console.error("Error:", error));
-// }
-
-// initCart();
