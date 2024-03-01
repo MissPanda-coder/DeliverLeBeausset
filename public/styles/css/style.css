@@ -61,31 +61,9 @@
   background-color: #aba9a9;
   font-family: "Roboto-Regular", sans-serif;
   color: #ffffff;
-  margin-top: 10px;
-}
-
-.footer_social {
-  display: flex;
-  justify-content: center;
-}
-
-.footer_social a {
-  margin: 0.8rem 0.8rem;
-}
-
-.footer_social a:hover {
-  color: rgb(146, 101, 218);
-  border-color: rgb(146, 101, 218);
-}
-
-.footer_social a i {
-  transition: color 0.3s ease;
-  color: #ffffff;
-  font-size: 1.6rem;
-}
-
-.footer_social a i:hover {
-  color: rgb(146, 101, 218);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
 }
 
 .footer ul {
@@ -123,7 +101,7 @@
   width: 100%;
 }
 
-#home_photo {
+#home-photo {
   background-image: url("../../img/autres/beausset.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,21 +109,21 @@
   width: 100%;
 }
 
-.home_description-block {
+.home-description-block {
   display: block;
   width: 100%;
   margin-top: 20px;
   font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
-.home_description-flex {
+.home-description-flex {
   display: flex;
   flex-flow: column nowrap;
   margin: auto;
   width: 90%;
 }
 
-.home_description {
+.home-description {
   font-family: "Roboto-Regular", sans-serif;
   text-align: center;
   line-height: 2rem;
@@ -157,21 +135,65 @@ h1, .h1 {
   margin-bottom: 2rem !important;
 }
 
-#home_text {
+#home-text {
   text-align: center;
 }
 
-.line {
+.home-line {
   width: 40%;
   height: 0.21rem;
   background-color: rgb(146, 101, 218);
-  margin: 20px auto 49px auto;
+  margin: 20px auto 60px auto;
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 768px) {
-  #home_photo {
+@media only screen and (max-width: 768px) {
+  #home-photo {
     height: 15rem;
+  }
+}
+@media only screen and (min-height: 800px) and (max-height: 1024px) {
+  .home-description-block {
+    margin-top: 40px;
+  }
+  .home-line {
+    margin: 20px auto 87px auto;
+  }
+}
+@media only screen and (min-height: 1025px) and (max-height: 1180px) {
+  .home-description-block {
+    margin-top: 80x;
+  }
+  h1, .h1 {
+    overflow-wrap: break-word;
+    margin-bottom: 3rem !important;
+  }
+  .home-line {
+    margin: 40px auto 76px auto;
+  }
+}
+@media only screen and (min-height: 1181px) and (max-height: 1366px) {
+  .home-description-block {
+    margin-top: 100px;
+  }
+  h1, .h1 {
+    overflow-wrap: break-word;
+    margin-bottom: 5rem !important;
+  }
+  .home-line {
+    margin: 81px auto 200px auto;
+  }
+}
+@media only screen and (min-height: 1367px) and (max-height: 1500px) {
+  .home-description-block {
+    margin-top: 110px;
+  }
+  h1, .h1 {
+    overflow-wrap: break-word;
+    margin-bottom: 5rem !important;
+  }
+  .home-line {
+    margin: 80px auto 130px auto;
   }
 }
 .btnSearch {
@@ -462,7 +484,7 @@ header {
 }
 
 .hamburger {
-  padding: 0;
+  padding-top: 0.4rem;
   width: 37px;
   height: 37px;
   display: flex;
@@ -729,7 +751,8 @@ h5, .h5 {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  width: 600px;
+  width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
+  max-width: 600px; /* Limite la largeur maximale pour éviter l'extension excessive sur de grands écrans */
   margin: auto;
   position: fixed;
   top: 50%;
@@ -749,7 +772,7 @@ h5, .h5 {
 #loginForm h2, #loginForm .h2 {
   font-size: 2em;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
   text-transform: uppercase;
 }
 
@@ -765,15 +788,15 @@ h5, .h5 {
 .form_field label {
   display: block;
   color: #777;
-  margin-bottom: 5px;
+  margin-bottom: 1.25%; /* Utilisation de pourcentage pour un espacement adaptatif */
 }
 
 .form_field input, .form_field select {
   border: solid 2px #f0f0f0;
   border-radius: 3px;
-  padding: 10px;
-  margin-bottom: 5px;
-  font-size: 14px;
+  padding: 0.4em;
+  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
+  font-size: 1.4em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
   display: block;
   width: 100%;
 }
@@ -800,7 +823,7 @@ h5, .h5 {
 
 .form_field small, .form_field .small {
   color: var(--error-color);
-  font-size: 9px;
+  font-size: 0.9em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
 }
 
 .field-icon-logIn {
@@ -890,7 +913,10 @@ h5, .h5 {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  width: 600px;
+  width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
+  max-width: 600px; /* Limite la largeur maximale pour éviter l'extension excessive sur de grands écrans */
+  margin: auto;
+  /* Utilisation de l'héritage pour éviter la répétition */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -909,7 +935,7 @@ h5, .h5 {
 #registerForm h2, #registerForm .h2 {
   font-size: 2em;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
   text-transform: uppercase;
 }
 
@@ -921,17 +947,19 @@ h5, .h5 {
 .form_field label {
   display: block;
   color: #777;
-  margin-bottom: 2px;
+  margin-bottom: 1.25%; /* Utilisation de pourcentage pour un espacement adaptatif */
+  /* Utilisation de l'héritage pour éviter la répétition */
 }
 
 .form_field input, .form_field select {
   border: solid 2px #f0f0f0;
   border-radius: 3px;
-  padding: 5px;
-  margin-bottom: 2px;
-  font-size: 14px;
+  padding: 0.4em;
+  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
+  font-size: 1.4em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
   display: block;
   width: 100%;
+  /* Utilisation de l'héritage pour éviter la répétition */
 }
 
 .form_field input:focus, .form_field select:focus {
@@ -1047,7 +1075,8 @@ h5, .h5 {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  width: 600px;
+  width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
+  max-width: 600px; /* Limite la largeur maximale pour éviter l'extension excessive sur de grands écrans */
   margin: auto;
   position: fixed;
   top: 50%;
@@ -1064,7 +1093,7 @@ h5, .h5 {
 #forgotPasswordForm h2, #forgotPasswordForm .h2 {
   font-size: 2em;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
   text-transform: uppercase;
 }
 
@@ -1075,16 +1104,16 @@ h5, .h5 {
 .form_field label {
   display: block;
   color: #777;
-  margin-bottom: 5px;
+  margin-bottom: 1.25%; /* Utilisation de pourcentage pour un espacement adaptatif */
 }
 
 .form_field input,
 .form_field select {
   border: solid 2px #f0f0f0;
   border-radius: 3px;
-  padding: 10px;
-  margin-bottom: 5px;
-  font-size: 14px;
+  padding: 0.4em;
+  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
+  font-size: 1.4em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
   display: block;
   width: 100%;
 }

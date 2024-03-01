@@ -2,27 +2,27 @@
     width: 100%;
   }
   
-  #home_photo {
+  #home-photo {
     background-image: url("../../img/autres/beausset.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 24rem; 
     width: 100%;
   }
-  .home_description-block {
+  .home-description-block {
     display: block;
     width: 100%;
     margin-top: 20px;
     font-size: clamp(1rem, 5vw, 1.2rem);
   }
-  .home_description-flex {
+  .home-description-flex {
     display: flex;
     flex-flow: column nowrap;
     margin:auto;
     width: 90%;
   }
   
-  .home_description {
+  .home-description {
     font-family: "Roboto-Regular", sans-serif;
     text-align: center;
     line-height: 2rem;
@@ -34,24 +34,78 @@
     margin-bottom: 2rem !important;
   }
   
-  #home_text {
+  #home-text {
   text-align: center;
   }
 
-  .line{
+  .home-line{
     width:40%;
     height:0.21rem;
     background-color: $c-purple;
-   margin: 20px auto 49px auto;
+   margin: 20px auto 60px auto;
   }
 
 
   /* RESPONSIVE */
-  @media screen and (max-width: 768px) { 
-    #home_photo {
+  @media only screen and (max-width: 768px) { 
+    #home-photo {
       height: 15rem;
     }
   }
+
+
+  @media only screen and (min-height: 800px) and (max-height: 1024px) {
+    .home-description-block {
+      margin-top: 40px; 
+    }
+
+    .home-line{
+     margin: 20px auto 87px auto;
+    }
+  }
+
+  @media only screen and (min-height: 1025px) and (max-height: 1180px) {
+    .home-description-block {
+      margin-top: 80x; 
+    }
+
+    h1 {
+      overflow-wrap: break-word;
+      margin-bottom: 3rem !important;
+    }
+    .home-line{
+     margin: 40px auto 76px auto;
+    }
+  }
+
+
+  @media only screen and (min-height: 1181px) and (max-height: 1366px) {
+    .home-description-block {
+      margin-top: 100px; 
+    }
+
+    h1 {
+      overflow-wrap: break-word;
+      margin-bottom: 5rem !important;
+    }
+    .home-line{
+     margin: 81px auto 200px auto;
+    }
+  }
   
+
+  @media only screen and (min-height: 1367px) and (max-height: 1500px) {
+    .home-description-block {
+      margin-top: 110px; 
+    }
+
+    h1 {
+      overflow-wrap: break-word;
+      margin-bottom: 5rem !important;
+    }
+    .home-line{
+     margin: 80px auto 130px auto;
+    }
+  }
   
   

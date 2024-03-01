@@ -8,32 +8,9 @@
   background-color: $c-brown;
   font-family: 'Roboto-Regular', sans-serif;
   color: $c-white;
-  margin-top:10px;
-}
-
-
-.footer_social{
-  display: flex;
-  justify-content: center;
-}
-
-.footer_social a {
-  margin: 0.8rem 0.8rem; 
-}
-
-.footer_social a:hover {
-  color: $c-purple;
-  border-color: $c-purple;
-}
-
-.footer_social a i{
-  transition: color 0.3s ease;
-  color: $c-white;
-  font-size: 1.6rem;
-}
-
-.footer_social a i:hover{
-  color: $c-purple;
+  margin-top:1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
 }
 
 .footer ul {
@@ -59,7 +36,6 @@
   color: $c-purple;
 }
 
-
 .copyright {
   margin-top: 0.8rem; 
   text-align: center;
@@ -75,7 +51,9 @@
 
 
 // @media screen and (min-width: 769px) and (max-width: 992px) { 
+// footer{
 
+// }
 //   }
 
 

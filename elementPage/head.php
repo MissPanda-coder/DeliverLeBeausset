@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
   <link rel="stylesheet" href="public/styles/css/style.css">
-  <meta name="description" content="Une plateforme 100% pour les Beaussetans. Vous habitez Le Beausset et vous ne pouvez pas vous déplacer pour vos achats dans les commerces locaux ? Alors n’attendez plus, faites vos achats sur Deliver et vous serez livrés directement devant votre porte ">
+  <meta name="description" content="Découvrez Deliver, la plateforme de commerce en ligne dédiée aux habitants du Beausset, exclusivement réservée aux personnes âgées et aux personnes en situation de handicap. Faites vos achats en ligne auprès des commerçants locaux et profitez de la livraison gratuite directement à votre domicile. Ne manquez plus aucun produit, même si vous ne pouvez pas vous déplacer.">
   <title><?= $title ?></title>
 
 

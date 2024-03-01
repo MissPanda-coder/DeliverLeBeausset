@@ -218,38 +218,38 @@ function fetchProducts(url) {
 init();
 
 //CART NAVBAR
-const cart = new Cart();
-const countElement = document.createElement("span");
-countElement.classList.add("count-nb");
-const navBar = document.querySelector(".cart-span");
-navBar.appendChild(countElement);
+// const cart = new Cart();
+// const countElement = document.createElement("span");
+// countElement.classList.add("count-nb");
+// const navBar = document.querySelector(".cart-span");
+// navBar.appendChild(countElement);
 
 
-const addToCartButtons = document.querySelectorAll(".btn-cart");
-addToCartButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
+// const addToCartButtons = document.querySelectorAll(".btn-cart");
+// addToCartButtons.forEach((button) => {
+//   button.addEventListener("click", (event) => {
  
-    const productId = event.target.dataset.productId;
-    const productName = event.target.dataset.productName;
-    const productPrice = parseFloat(event.target.dataset.productPrice);
+//     const productId = event.target.dataset.productId;
+//     const productName = event.target.dataset.productName;
+//     const productPrice = parseFloat(event.target.dataset.productPrice);
 
   
-    const product = {
-      id: productId,
-      name: productName,
-      price: productPrice,
-      quantity: 1
-    };
+//     const product = {
+//       id: productId,
+//       name: productName,
+//       price: productPrice,
+//       quantity: 1
+//     };
 
-    cart.addToCart(product);
+//     cart.addToCart(product);
 
     
-    const cartItemCount = cart.getNumberProduct();
-    if (cartItemCount > 0) {
-      countElement.textContent = cartItemCount;
-      countElement.style.display = "block";
-    } else {
-      countElement.style.display = "none";
-    }
-  });
-});
+//     const cartItemCount = cart.getNumberProduct();
+//     if (cartItemCount > 0) {
+//       countElement.textContent = cartItemCount;
+//       countElement.style.display = "block";
+//     } else {
+//       countElement.style.display = "none";
+//     }
+//   });
+// });

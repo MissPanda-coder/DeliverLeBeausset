@@ -1,4 +1,82 @@
 
+// @mixin formLayout{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #fff;
+//     padding: 1em;
+//     border-radius: 5px;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+//     width: 600px;
+//     margin:auto;
+    
+// }
+
+// @mixin formLayoutRegister{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #fff;
+//     padding: 1em;
+//     border-radius: 5px;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+//     width: 600px;
+    
+// }
+
+// @mixin formTitle{
+//     font-size: 2em;
+//     text-align: center;
+//     margin-bottom: 25px;
+//     text-transform: uppercase;
+// }
+
+// @mixin formTitleRegister{
+//     font-size: 2em;
+//     text-align: center;
+//     margin-bottom: 15px;
+//     text-transform: uppercase;
+// }
+
+// @mixin formFieldLabel{
+//     display: block;
+//     color: #777;
+//     margin-bottom: 5px;
+// }
+
+// @mixin formFieldLabelRegister{
+//     display: block;
+//     color: #777;
+//     margin-bottom: 2px;
+// }
+
+// @mixin formFieldInputSelect{
+//     border: solid 2px #f0f0f0;
+//     border-radius: 3px;
+//     padding: 10px;
+//     margin-bottom: 5px;
+//     font-size: 14px;
+//     display: block;
+//     width: 100%;
+// }
+
+// @mixin formFieldInputSelectRegister{
+//     border: solid 2px #f0f0f0;
+//     border-radius: 3px;
+//     padding: 5px;
+//     margin-bottom: 2px;
+//     font-size: 14px;
+//     display: block;
+//     width: 100%;
+// }
+
+// @mixin formSmall{
+//     color: $error-color;
+//     font-size: 9px;   
+// }
+
 @mixin formLayout{
     display: flex;
     flex-direction: column;
@@ -8,71 +86,51 @@
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 600px;
-    margin:auto;
-    
+    width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
+    max-width: 600px; /* Limite la largeur maximale pour éviter l'extension excessive sur de grands écrans */
+    margin: auto;
 }
 
 @mixin formLayoutRegister{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 600px;
-    
+    @include formLayout; /* Utilisation de l'héritage pour éviter la répétition */
 }
 
 @mixin formTitle{
     font-size: 2em;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
     text-transform: uppercase;
 }
 
 @mixin formTitleRegister{
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+    @include formTitle; /* Utilisation de l'héritage pour éviter la répétition */
 }
 
 @mixin formFieldLabel{
     display: block;
     color: #777;
-    margin-bottom: 5px;
+    margin-bottom: 1.25%; /* Utilisation de pourcentage pour un espacement adaptatif */
 }
 
 @mixin formFieldLabelRegister{
-    display: block;
-    color: #777;
-    margin-bottom: 2px;
+    @include formFieldLabel; /* Utilisation de l'héritage pour éviter la répétition */
 }
 
 @mixin formFieldInputSelect{
     border: solid 2px #f0f0f0;
     border-radius: 3px;
-    padding: 10px;
-    margin-bottom: 5px;
-    font-size: 14px;
+    padding: 0.4em;
+    margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
+    font-size: 1.4em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
     display: block;
     width: 100%;
 }
 
 @mixin formFieldInputSelectRegister{
-    border: solid 2px #f0f0f0;
-    border-radius: 3px;
-    padding: 5px;
-    margin-bottom: 2px;
-    font-size: 14px;
-    display: block;
-    width: 100%;
+    @include formFieldInputSelect; /* Utilisation de l'héritage pour éviter la répétition */
 }
 
 @mixin formSmall{
     color: var(--error-color);
-    font-size: 9px;   
+    font-size: 0.9em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
 }
