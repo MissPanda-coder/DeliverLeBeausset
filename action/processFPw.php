@@ -8,15 +8,15 @@ $errors_forgot = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['forgot'])) { // Vérifie si le formulaire "forgot" a été soumis
     $_POST = filter_input_array(INPUT_POST, [
-        'email_forgot' => FILTER_SANITIZE_EMAIL
+        'email-forgot' => FILTER_SANITIZE_EMAIL
     ]);
 
-    $email_forgot = $_POST['email_forgot'] ?? '';
+    $email_forgot = $_POST['email-forgot'] ?? '';
 
     if (!$email_forgot) {
-        $errors_forgot['email_forgot'] = FORGOT_ERROR_REQUIRED;
+        $errors_forgot['email-forgot'] = FORGOT_ERROR_REQUIRED;
     } elseif (!filter_var($email_forgot, FILTER_VALIDATE_EMAIL)) {
-        $errors_forgot['email_forgot'] = FORGOT_ERROR_EMAIL;
+        $errors_forgot['email-forgot'] = FORGOT_ERROR_EMAIL;
     } else {
         $to = $email_forgot;
         $subject = "Réinitialisation de mot de passe";
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['forgot'])) { // Véri
         if (mail($to, $subject, $message, $headers)) {
             $success_message_forgot = FORGOT_SUCCESS_MESSAGE;
         } else {
-            $errors_forgot['email_forgot'] = "Une erreur s'est produite lors de l'envoi de l'email de réinitialisation.";
+            $errors_forgot['email-forgot'] = "Une erreur s'est produite lors de l'envoi de l'email de réinitialisation.";
         }
     }
 }
@@ -42,6 +42,7 @@ if (isset($success_message_forgot)) {
     echo $success_message_forgot;
 }
 ?>
+
 
 
 

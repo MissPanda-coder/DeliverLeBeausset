@@ -1,6 +1,6 @@
 export function toggleMenu() {
   const hamburger = document.querySelector(".hamburger");
-  const menu = document.querySelector(".nav_links");
+  const menu = document.querySelector(".nav-links");
 
   hamburger.addEventListener("click", function () {
     this.classList.toggle("toggle");

@@ -147,53 +147,30 @@ h1, .h1 {
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 711px) {
   #home-photo {
     height: 15rem;
   }
 }
-@media only screen and (min-height: 800px) and (max-height: 1024px) {
+@media only screen and (min-width: 712px) and (max-width: 767px) {
   .home-description-block {
-    margin-top: 40px;
+    margin-top: 35px;
   }
   .home-line {
-    margin: 20px auto 87px auto;
+    margin: 25px auto 30px auto;
   }
 }
-@media only screen and (min-height: 1025px) and (max-height: 1180px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .home-description-block {
-    margin-top: 80x;
-  }
-  h1, .h1 {
-    overflow-wrap: break-word;
-    margin-bottom: 3rem !important;
+    margin-top: 60px;
   }
   .home-line {
-    margin: 40px auto 76px auto;
+    margin: 50px auto 143px auto;
   }
 }
-@media only screen and (min-height: 1181px) and (max-height: 1366px) {
-  .home-description-block {
-    margin-top: 100px;
-  }
-  h1, .h1 {
-    overflow-wrap: break-word;
-    margin-bottom: 5rem !important;
-  }
+@media screen and (min-width: 993px) {
   .home-line {
-    margin: 81px auto 200px auto;
-  }
-}
-@media only screen and (min-height: 1367px) and (max-height: 1500px) {
-  .home-description-block {
-    margin-top: 110px;
-  }
-  h1, .h1 {
-    overflow-wrap: break-word;
-    margin-bottom: 5rem !important;
-  }
-  .home-line {
-    margin: 80px auto 130px auto;
+    margin: 20px auto 60px auto;
   }
 }
 .btnSearch {
@@ -258,14 +235,14 @@ h1, .h1 {
   padding: 0 !important;
 }
 
-#searchBar_input {
+#searchBar-input {
   width: 100%;
   height: 100%;
   padding: 0;
   border: none;
 }
 
-#searchBar_input:focus {
+#searchBar-input:focus {
   outline: none !important;
 }
 
@@ -278,11 +255,11 @@ h1, .h1 {
   outline: none;
 }
 
-.search_button {
+.search-button {
   border: none;
 }
 
-.categories_button {
+.categories-button {
   border: none;
   background-color: #ffffff;
 }
@@ -329,20 +306,20 @@ h1, .h1 {
   margin: 40px 0 145px 0;
 }
 
-.presentation_text-layout {
+.presentation-text-layout {
   font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
-.presentation_text {
+.presentation-text {
   line-height: 2rem;
   word-wrap: balance;
 }
 
-.presentation_author {
+.presentation-author {
   margin-top: 30px;
 }
 
-.presentation_img {
+.presentation-img {
   max-width: 100%;
   height: auto;
   margin-top: 20px;
@@ -350,20 +327,20 @@ h1, .h1 {
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
-  .presentation_text-layout {
+  .presentation-text-layout {
     margin-top: 20px;
   }
-  .presentation_img {
+  .presentation-img {
     margin-top: 15px;
     margin-left: 30px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .presentation_text-layout {
+  .presentation-text-layout {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .presentation_img {
+  .presentation-img {
     margin-top: 220px;
     margin-left: 30px;
   }
@@ -410,14 +387,14 @@ header {
   height: auto;
 }
 
-.logo img {
+.navbar-logo img {
   height: 2.5rem;
   width: auto;
   margin-bottom: 0.5rem;
   margin-left: 1.25rem;
 }
 
-.nav_links {
+.nav-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -427,17 +404,17 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
-.nav_links li {
+.nav-links li {
   position: relative;
 }
-.nav_links li a {
+.nav-links li a {
   text-decoration: none;
   color: #ffffff;
 }
-.nav_links li a:hover {
+.nav-links li a:hover {
   color: rgb(146, 101, 218);
 }
-.nav_links li a::before {
+.nav-links li a::before {
   content: "";
   display: block;
   height: 3px;
@@ -449,10 +426,10 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
-.nav_links li a:hover::before {
+.nav-links li a:hover::before {
   width: 80%;
 }
-.nav_links .login_button {
+.nav-links .login-button {
   width: auto;
   height: 40px;
   color: #ffffff;
@@ -472,14 +449,14 @@ header {
   background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
   border: none;
 }
-.nav_links .login_button:before {
+.nav-links .login-button:before {
   height: 0%;
   width: 2px;
 }
-.nav_links .login_button:hover {
+.nav-links .login-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-.nav_links .login_button:hover {
+.nav-links .login-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -492,27 +469,27 @@ header {
   align-items: center;
   display: none;
 }
-.hamburger .hamburger_line1,
-.hamburger .hamburger_line2,
-.hamburger .hamburger_line3 {
+.hamburger .hamburger-line1,
+.hamburger .hamburger-line2,
+.hamburger .hamburger-line3 {
   width: 50%;
   height: 0.2rem;
   background: #ffffff;
 }
-.hamburger .hamburger_line2 {
+.hamburger .hamburger-line2 {
   margin: 4.5px 0;
 }
 
-.hamburger.toggle .hamburger_line1 {
+.hamburger.toggle .hamburger-line1 {
   transform: rotate(-45deg) translate(-0.3rem, 0.37rem);
   z-index: 2;
 }
 
-.hamburger.toggle .hamburger_line2 {
+.hamburger.toggle .hamburger-line2 {
   opacity: 0;
 }
 
-.hamburger.toggle .hamburger_line3 {
+.hamburger.toggle .hamburger-line3 {
   transform: rotate(45deg) translate(-0.3rem, -0.37rem);
   z-index: 2;
 }
@@ -532,7 +509,7 @@ header {
   .navbar {
     padding: 0.5rem 1.25rem;
   }
-  .nav_links {
+  .nav-links {
     display: none;
     position: fixed;
     top: 0;
@@ -552,16 +529,16 @@ header {
     display: flex;
     pointer-events: auto;
   }
-  .nav_links li {
+  .nav-links li {
     opacity: 0;
     transition: all 0.5s ease;
     margin: 0 0 1rem;
   }
-  .nav_links.open li {
+  .nav-links.open li {
     opacity: 1;
   }
 }
-.cart_img {
+.cart-img {
   position: relative;
 }
 
@@ -583,19 +560,19 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .cart_img {
+  .cart-img {
     height: 2.5rem !important;
     width: 2.6rem !important;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .logo img {
+  .navbar-logo img {
     height: 2rem;
     width: 2rem;
     margin-left: 1rem;
     margin-bottom: 0.5rem;
   }
-  .nav_links li a {
+  .nav-links li a {
     margin: 0 0.5rem;
   }
 }
@@ -603,7 +580,7 @@ header {
   .navbar {
     padding: 1rem 2.5rem;
   }
-  .nav_links li {
+  .nav-links li {
     margin-left: 1rem;
   }
 }
@@ -642,35 +619,35 @@ header {
   font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
-.cgv_title {
+.cgv-title {
   font-size: 2rem;
   text-align: center;
   margin-top: 1.25rem;
 }
 
-.cgv_update {
+.cgv-update {
   margin: 0.6rem 0;
 }
 
-.preambule_subtitle {
+.preambule-subtitle {
   margin-left: 1.8rem;
 }
 
-.preambule_title-click,
-.preambule_subtitle {
+.preambule-title-click,
+.preambule-subtitle {
   text-decoration: none;
   color: inherit;
 }
 
-.preambule_title-click:hover,
-.preambule_subtitle:hover {
+.preambule-title-click:hover,
+.preambule-subtitle:hover {
   color: rgb(146, 101, 218);
 }
 
-.preambule_title-click:visited,
-.preambule_subtitle:visited,
-.preambule_title-click:active,
-.preambule_subtitle:active {
+.preambule-title-click:visited,
+.preambule-subtitle:visited,
+.preambule-title-click:active,
+.preambule-subtitle:active {
   color: inherit;
   text-decoration: none;
 }
@@ -680,7 +657,7 @@ h5, .h5 {
   margin-top: 1.2rem;
 }
 
-.preambule_last {
+.preambule-last {
   margin-bottom: 1.2rem;
 }
 
@@ -702,7 +679,7 @@ h5, .h5 {
   margin-top: 1.5rem !important;
 }
 
-.confidential_text {
+.confidential-text {
   width: 95%;
   margin: 1rem auto;
   padding: 0 1.25rem;
@@ -710,7 +687,7 @@ h5, .h5 {
   font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
-.confidential_update {
+.confidential-update {
   margin: 1rem auto;
 }
 
@@ -751,8 +728,8 @@ h5, .h5 {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
-  max-width: 600px; /* Limite la largeur maximale pour éviter l'extension excessive sur de grands écrans */
+  width: 90%;
+  max-width: 600px;
   margin: auto;
   position: fixed;
   top: 50%;
@@ -772,8 +749,12 @@ h5, .h5 {
 #loginForm h2, #loginForm .h2 {
   font-size: 2em;
   text-align: center;
-  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
+  margin-bottom: 2.5%;
   text-transform: uppercase;
+}
+
+.form-field {
+  position: relative;
 }
 
 .form-field-center {
@@ -785,65 +766,66 @@ h5, .h5 {
   text-align: center;
 }
 
-.form_field label {
+.form-field label {
   display: block;
   color: #777;
-  margin-bottom: 1.25%; /* Utilisation de pourcentage pour un espacement adaptatif */
+  margin-bottom: 1.25%;
 }
 
-.form_field input, .form_field select {
+.form-field input, .form-field select {
   border: solid 2px #f0f0f0;
   border-radius: 3px;
   padding: 0.4em;
-  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
-  font-size: 1.4em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
+  margin-bottom: 2.5%;
+  font-size: 1.2em;
   display: block;
   width: 100%;
 }
 
-.form_field input:focus, .form_field select:focus {
+.form-field input:focus, .form-field select:focus {
   outline: none;
 }
 
-.form_field.error input {
+.form-field.error input {
   border-color: red;
 }
 
-.form_field.error select {
+.form-field.error select {
   border: 2px solid red;
 }
 
-.form_field.success input {
+.form-field.success input {
   border-color: green;
 }
 
-.form_field.success select {
+.form-field.success select {
   border: 2px solid green;
 }
 
-.form_field small, .form_field .small {
-  color: var(--error-color);
-  font-size: 0.9em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
+.form-field small, .form-field .small {
+  color: red;
+  font-size: 0.9em;
 }
 
-.field-icon-logIn {
+.field-icon-login {
   position: absolute;
-  transform: translateY(-50%);
-  top: 50px;
-  right: 35px;
   z-index: 2;
   color: black;
+  float: right;
+  transform: translateY(-50%);
+  top: 53px;
+  right: 35px;
 }
 
-.forgot_password:visited,
-.register_button:visited,
-.forgot_password:active,
-.register_button:active {
+.forgot-password:visited,
+.register-button:visited,
+.forgot-password:active,
+.register-button:active {
   color: inherit;
   text-decoration: none;
 }
 
-.login_button {
+.login-button {
   width: auto;
   height: 40px;
   color: #ffffff;
@@ -865,14 +847,14 @@ h5, .h5 {
   text-align: center;
   margin: auto;
 }
-.login_button:before {
+.login-button:before {
   height: 0%;
   width: 2px;
 }
-.login_button:hover {
+.login-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-.login_button:hover {
+.login-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -913,10 +895,9 @@ h5, .h5 {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
-  max-width: 600px; /* Limite la largeur maximale pour éviter l'extension excessive sur de grands écrans */
+  width: 90%;
+  max-width: 600px;
   margin: auto;
-  /* Utilisation de l'héritage pour éviter la répétition */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -932,68 +913,14 @@ h5, .h5 {
   padding: 10px 15px;
 }
 
-#registerForm h2, #registerForm .h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
-  text-transform: uppercase;
-}
-
-.form_field {
-  margin-bottom: 5px;
-  position: relative;
-}
-
-.form_field label {
-  display: block;
-  color: #777;
-  margin-bottom: 1.25%; /* Utilisation de pourcentage pour un espacement adaptatif */
-  /* Utilisation de l'héritage pour éviter la répétition */
-}
-
-.form_field input, .form_field select {
-  border: solid 2px #f0f0f0;
-  border-radius: 3px;
-  padding: 0.4em;
-  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
-  font-size: 1.4em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
-  display: block;
-  width: 100%;
-  /* Utilisation de l'héritage pour éviter la répétition */
-}
-
-.form_field input:focus, .form_field select:focus {
-  outline: none;
-}
-
-.form_field.error input {
-  border-color: red;
-}
-
-.form_field.error select {
-  border: 2px solid red;
-}
-
-.form_field.success input {
-  border-color: green;
-}
-
-.form_field.success select {
-  border: 2px solid green;
-}
-
-.form_field small, .form_field .small {
-  color: red;
-  font-size: 9px;
-}
-
 .field-icon-register {
   position: absolute;
-  transform: translateY(-50%);
-  top: 60px;
-  right: 35px;
   z-index: 2;
   color: black;
+  float: right;
+  transform: translateY(-50%);
+  top: 53px;
+  right: 35px;
 }
 
 .form-field-checkobox {
@@ -1075,8 +1002,8 @@ h5, .h5 {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
-  max-width: 600px; /* Limite la largeur maximale pour éviter l'extension excessive sur de grands écrans */
+  width: 90%;
+  max-width: 600px;
   margin: auto;
   position: fixed;
   top: 50%;
@@ -1090,61 +1017,11 @@ h5, .h5 {
   padding: 10px 20px;
 }
 
-#forgotPasswordForm h2, #forgotPasswordForm .h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
-  text-transform: uppercase;
-}
-
-.form_field {
+.form-field {
   margin-bottom: 5px;
 }
 
-.form_field label {
-  display: block;
-  color: #777;
-  margin-bottom: 1.25%; /* Utilisation de pourcentage pour un espacement adaptatif */
-}
-
-.form_field input,
-.form_field select {
-  border: solid 2px #f0f0f0;
-  border-radius: 3px;
-  padding: 0.4em;
-  margin-bottom: 2.5%; /* Utilisation de pourcentage pour un espacement adaptatif */
-  font-size: 1.4em; /* Utilisation d'unité em pour s'adapter à la taille de la police parente */
-  display: block;
-  width: 100%;
-}
-
-.form_field input:focus,
-.form_field select:focus {
-  outline: none;
-}
-
-.form_field.error input {
-  border-color: red;
-}
-
-.form_field.error select {
-  border: 2px solid red;
-}
-
-.form_field.success input {
-  border-color: green;
-}
-
-.form_field.success select {
-  border: 2px solid green;
-}
-
-.form_field small, .form_field .small {
-  color: red;
-  font-size: 9px;
-}
-
-.forgot_button {
+.forgot-button {
   width: auto;
   height: 40px;
   color: #ffffff;
@@ -1166,14 +1043,14 @@ h5, .h5 {
   text-align: center;
   margin: 20px auto;
 }
-.forgot_button:before {
+.forgot-button:before {
   height: 0%;
   width: 2px;
 }
-.forgot_button:hover {
+.forgot-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-.forgot_button:hover {
+.forgot-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 

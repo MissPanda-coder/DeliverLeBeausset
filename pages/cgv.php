@@ -4,41 +4,41 @@ include '../elementPage/head.php';
 include '../elementPage/navBar.php'; ?>
 
 <div class=" text-secondary cgv-layout">
-    <h4 class=" cgv_title">CONDITIONS GENERALES DE VENTE</h4>
+    <h4 class=" cgv-title">CONDITIONS GENERALES DE VENTE</h4>
 
-    <p class="cgv_update">(Mises à jour le 23/02/2024)</p>
+    <p class="cgv-update">(Mises à jour le 23/02/2024)</p>
     <div class="preambule">
-        <ol><a class="preambule_title-click" href="#article1">PREAMBULE</a></ol>
+        <ol><a class="preambule-title-click" href="#article1">PREAMBULE</a></ol>
 
-        <ol><a class="preambule_title-click" href="#article1">ARTICLE 1. ACCEPTATION DES CONDITIONS</a></ol>
+        <ol><a class="preambule-title-click" href="#article1">ARTICLE 1. ACCEPTATION DES CONDITIONS</a></ol>
 
-        <ol><a class="preambule_title-click" href="#article2">ARTICLE 2. PRODUITS ET SERVICES</a></ol>
+        <ol><a class="preambule-title-click" href="#article2">ARTICLE 2. PRODUITS ET SERVICES</a></ol>
 
-        <li><a class="preambule_subtitle" href="#2.1">2.1 Offre de produits et services</a></li>
+        <li><a class="preambule-subtitle" href="#2.1">2.1 Offre de produits et services</a></li>
 
-        <li><a class="preambule_subtitle" href="#2.2">2.2 Disponibilité des produits et services</a></li>
+        <li><a class="preambule-subtitle" href="#2.2">2.2 Disponibilité des produits et services</a></li>
 
-        <ol><a class="preambule_title-click" href="#">ARTICLE 3. PRIX DES PRODUITS ET SERVICES</a></ol>
+        <ol><a class="preambule-title-click" href="#">ARTICLE 3. PRIX DES PRODUITS ET SERVICES</a></ol>
 
-        <ol><a class="preambule_title-click" href="#">ARTICLE 4. PAIEMENT</a></ol>
+        <ol><a class="preambule-title-click" href="#">ARTICLE 4. PAIEMENT</a></ol>
 
-        <li><a class="preambule_subtitle" href="#">4.1 Modalités de paiement</a></li>
+        <li><a class="preambule-subtitle" href="#">4.1 Modalités de paiement</a></li>
 
-        <li><a class="preambule_subtitle" href="#">4.2 Encaissement des paiements et facturation</a></li>
+        <li><a class="preambule-subtitle" href="#">4.2 Encaissement des paiements et facturation</a></li>
 
-        <ol><a class="preambule_title-click" href="#">ARTICLE 5. PROCESSUS DE COMMANDE</a></ol>
+        <ol><a class="preambule-title-click" href="#">ARTICLE 5. PROCESSUS DE COMMANDE</a></ol>
 
-        <li><a class="preambule_subtitle" href="#">5.1 Création d’un compte client</a></li>
+        <li><a class="preambule-subtitle" href="#">5.1 Création d’un compte client</a></li>
 
-        <li><a class="preambule_subtitle" href="#">5.2 Formation du contrat de vente : mode opératoire et preuve</a></li>
+        <li><a class="preambule-subtitle" href="#">5.2 Formation du contrat de vente : mode opératoire et preuve</a></li>
 
-        <li><a class="preambule_subtitle" href="#">5.3 Suivi de la commande</a></li>
+        <li><a class="preambule-subtitle" href="#">5.3 Suivi de la commande</a></li>
 
-        <ol class="preambule_title-click">ARTICLE 6. LIVRAISON </ol>
+        <ol class="preambule-title-click">ARTICLE 6. LIVRAISON </ol>
 
-        <li><a class="preambule_subtitle" href="#">6.1 Modes de livraison</a></li>
+        <li><a class="preambule-subtitle" href="#">6.1 Modes de livraison</a></li>
 
-        <li><a class="preambule_subtitle" href="#">6.2 La livraison</a></li>
+        <li><a class="preambule-subtitle" href="#">6.2 La livraison</a></li>
     </div>
 
     <h5 id="article1">Préambule</h5>
@@ -63,7 +63,7 @@ include '../elementPage/navBar.php'; ?>
     <h6 id="2.1">2.1. Offre de produits et de services</h6>
     <p>La liste et les caractéristiques des produits proposés sur le Site sont fonction du parcours de course choisi par le Client et du magasin/Drive/Piéton/Consigne concerné(e). Elles sont susceptibles d'être modifiées et adaptées à tout moment pour mieux répondre aux attentes du Client </p>
     <h6 id="2.2">2.2 Disponibilité des produits et services</h6>
-    <p class="preambule_last">etc etc etc</p>
+    <p class="preambule-last">etc etc etc</p>
 </div>
 
 <?php

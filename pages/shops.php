@@ -19,10 +19,10 @@ include '../elementPage/navBar.php'; ?>
       </select>
     </div>
     <div class="searchBar-text">
-      <input type="search" id="searchBar_input" name="q" />
+      <input type="search" id="searchBar-input" name="q" />
     </div>
     <div class="searchBar-glass">
-      <button type="submit" class="search_button">
+      <button type="submit" class="search-button">
         <img src="./public/img/outils/loupe.png" class="glass">
       </button>
     </div>
@@ -39,23 +39,23 @@ include '../elementPage/navBar.php'; ?>
         <div class="card-body">
           <div class="row">
             <div class="col-6">
-              <img src="./public/img/categories/legumes.jpg" class="img-fluid mb-2 categories_img" alt="photo d'un panier de légumes posé sur le sol dans un champs">
-              <span><button class="categories_button text-secondary" value="2">Fruits et Legumes</button></span>
+              <img src="./public/img/categories/legumes.jpg" class="img-fluid mb-2 categories-img" alt="photo d'un panier de légumes posé sur le sol dans un champs">
+              <span><button class="categories-button text-secondary" value="2">Fruits et Legumes</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/aperitif.jpg" class="img-fluid mb-2" alt="photo d'un paquet de chips nature Lays 150g">
-              <span><button class="categories_button text-secondary" value="3">Apéritif</button></span>
+              <span><button class="categories-button text-secondary" value="3">Apéritif</button></span>
             </div>
 
           </div>
           <div class="row">
             <div class="col-6">
               <img src="./public/img/categories/boissons.jpg" class="img-fluid mb-2" alt="photo de 4 boissons différentes, faiches, posées sur une table">
-              <span><button class="categories_button text-secondary" value="">Boissons</button></span>
+              <span><button class="categories-button text-secondary" value="">Boissons</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/viandes.jpg" class="img-fluid mb-2" alt="photo d'un étal de diverses viandes dans un magasin">
-              <span><button class="categories_button text-secondary" value="">Viandes</button></span>
+              <span><button class="categories-button text-secondary" value="">Viandes</button></span>
             </div>
           </div>
         </div>
@@ -69,22 +69,22 @@ include '../elementPage/navBar.php'; ?>
           <div class="row">
             <div class="col-6">
               <img src="./public/img/categories/beaute.jpg" class="img-fluid mb-2" alt="photo d'un panier de légumes posé sur le sol dans un champs">
-              <span><button class="categories_button text-secondary" value="">Beauté</button></span>
+              <span><button class="categories-button text-secondary" value="">Beauté</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/hygiene.jpg" class="img-fluid mb-2" alt="photo d'un paquet de chips nature Lays 150g">
-              <span><button class="categories_button text-secondary" value="">Hygiène</button></span>
+              <span><button class="categories-button text-secondary" value="">Hygiène</button></span>
             </div>
 
           </div>
           <div class="row">
             <div class="col-6">
               <img src="./public/img/categories/nutrition.jpg" class="img-fluid mb-2" alt="photo de 4 boissons différentes, faiches, posées sur une table">
-              <span><button class="categories_button text-secondary" value="">Nutrition</button></span>
+              <span><button class="categories-button text-secondary" value="">Nutrition</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/sport.jpg" class="img-fluid mb-2" alt="photo d'un étal de diverses viandes dans un magasin">
-              <span><button class="categories_button text-secondary" value="">Sport</button></span>
+              <span><button class="categories-button text-secondary" value="">Sport</button></span>
             </div>
           </div>
         </div>
@@ -99,23 +99,23 @@ include '../elementPage/navBar.php'; ?>
         <div class="card-body">
           <div class="row">
             <div class="col-6">
-              <img src="./public/img/categories/legumes.jpg" class="img-fluid mb-2 categories_img" alt="photo d'un panier de légumes posé sur le sol dans un champs">
-              <span><button class="categories_button text-secondary" value="2">Fruits et Legumes</button></span>
+              <img src="./public/img/categories/legumes.jpg" class="img-fluid mb-2 categories-img" alt="photo d'un panier de légumes posé sur le sol dans un champs">
+              <span><button class="categories-button text-secondary" value="2">Fruits et Legumes</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/aperitif.jpg" class="img-fluid mb-2" alt="photo d'un paquet de chips nature Lays 150g">
-              <span><button class="categories_button text-secondary" value="">Apéritif</button></span>
+              <span><button class="categories-button text-secondary" value="">Apéritif</button></span>
             </div>
 
           </div>
           <div class="row">
             <div class="col-6">
               <img src="./public/img/categories/boissons.jpg" class="img-fluid mb-2" alt="photo de 4 boissons différentes, faiches, posées sur une table">
-              <span><button class="categories_button text-secondary" value="">Boissons</button></span>
+              <span><button class="categories-button text-secondary" value="">Boissons</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/viandes.jpg" class="img-fluid mb-2" alt="photo d'un étal de diverses viandes dans un magasin">
-              <span><button class="categories_button text-secondary" value="">Viandes</button></span>
+              <span><button class="categories-button text-secondary" value="">Viandes</button></span>
             </div>
           </div>
         </div>
@@ -129,23 +129,23 @@ include '../elementPage/navBar.php'; ?>
         <div class="card-body">
           <div class="row">
             <div class="col-6">
-              <img src="./public/img/categories/legumes.jpg" class="img-fluid mb-2 categories_img" alt="photo d'un panier de légumes posé sur le sol dans un champs">
-              <span><button class="categories_button text-secondary" value="2">Fruits et Legumes</button></span>
+              <img src="./public/img/categories/legumes.jpg" class="img-fluid mb-2 categories-img" alt="photo d'un panier de légumes posé sur le sol dans un champs">
+              <span><button class="categories-button text-secondary" value="2">Fruits et Legumes</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/aperitif.jpg" class="img-fluid mb-2" alt="photo d'un paquet de chips nature Lays 150g">
-              <span><button class="categories_button text-secondary" value="">Apéritif</button></span>
+              <span><button class="categories-button text-secondary" value="">Apéritif</button></span>
             </div>
 
           </div>
           <div class="row">
             <div class="col-6">
               <img src="./public/img/categories/boissons.jpg" class="img-fluid mb-2" alt="photo de 4 boissons différentes, faiches, posées sur une table">
-              <span><button class="categories_button text-secondary" value="">Boissons</button></span>
+              <span><button class="categories-button text-secondary" value="">Boissons</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/viandes.jpg" class="img-fluid mb-2" alt="photo d'un étal de diverses viandes dans un magasin">
-              <span><button class="categories_button text-secondary" value="">Viandes</button></span>
+              <span><button class="categories-button text-secondary" value="">Viandes</button></span>
             </div>
           </div>
         </div>
@@ -159,22 +159,22 @@ include '../elementPage/navBar.php'; ?>
           <div class="row">
             <div class="col-6">
               <img src="./public/img/categories/beaute.jpg" class="img-fluid mb-2" alt="photo d'un panier de légumes posé sur le sol dans un champs">
-              <span><button class="categories_button text-secondary" value="">Beauté</button></span>
+              <span><button class="categories-button text-secondary" value="">Beauté</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/hygiene.jpg" class="img-fluid mb-2" alt="photo d'un paquet de chips nature Lays 150g">
-              <span><button class="categories_button text-secondary" value="">Hygiène</button></span>
+              <span><button class="categories-button text-secondary" value="">Hygiène</button></span>
             </div>
 
           </div>
           <div class="row">
             <div class="col-6">
               <img src="./public/img/categories/nutrition.jpg" class="img-fluid mb-2" alt="photo de 4 boissons différentes, faiches, posées sur une table">
-              <span><button class="categories_button text-secondary" value="">Nutrition</button></span>
+              <span><button class="categories-button text-secondary" value="">Nutrition</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/sport.jpg" class="img-fluid mb-2" alt="photo d'un étal de diverses viandes dans un magasin">
-              <span><button class="categories_button text-secondary" value="">Sport</button></span>
+              <span><button class="categories-button text-secondary" value="">Sport</button></span>
             </div>
           </div>
         </div>
@@ -187,23 +187,23 @@ include '../elementPage/navBar.php'; ?>
         <div class="card-body">
           <div class="row">
             <div class="col-6">
-              <img src="./public/img/categories/legumes.jpg" class="img-fluid mb-2 categories_img" alt="photo d'un panier de légumes posé sur le sol dans un champs">
-              <span><button class="categories_button text-secondary" value="2">Fruits et Legumes</button></span>
+              <img src="./public/img/categories/legumes.jpg" class="img-fluid mb-2 categories-img" alt="photo d'un panier de légumes posé sur le sol dans un champs">
+              <span><button class="categories-button text-secondary" value="2">Fruits et Legumes</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/aperitif.jpg" class="img-fluid mb-2" alt="photo d'un paquet de chips nature Lays 150g">
-              <span><button class="categories_button text-secondary" value="">Apéritif</button></span>
+              <span><button class="categories-button text-secondary" value="">Apéritif</button></span>
             </div>
 
           </div>
           <div class="row">
             <div class="col-6">
               <img src="./public/img/categories/boissons.jpg" class="img-fluid mb-2" alt="photo de 4 boissons différentes, faiches, posées sur une table">
-              <span><button class="categories_button text-secondary" value="">Boissons</button></span>
+              <span><button class="categories-button text-secondary" value="">Boissons</button></span>
             </div>
             <div class="col-6">
               <img src="./public/img/categories/viandes.jpg" class="img-fluid mb-2" alt="photo d'un étal de diverses viandes dans un magasin">
-              <span><button class="categories_button text-secondary" value="">Viandes</button></span>
+              <span><button class="categories-button text-secondary" value="">Viandes</button></span>
             </div>
           </div>
         </div>

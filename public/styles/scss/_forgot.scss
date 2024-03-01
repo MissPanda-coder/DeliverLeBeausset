@@ -17,50 +17,11 @@
   padding: 10px 20px;
 }
 
-#forgotPasswordForm h2 {
-  @include formTitle;
-}
-
-.form_field {
+.form-field {
   margin-bottom: 5px;
 }
 
-.form_field label {
-  @include formFieldLabel;
-}
-
-.form_field input,
-.form_field select {
-  @include formFieldInputSelect;
-}
-
-.form_field input:focus,
-.form_field select:focus {
-  outline: none;
-}
-
-.form_field.error input {
-  border-color: $error-color;
-}
-
-.form_field.error select {
-  border: 2px solid $error-color;
-}
-
-.form_field.success input {
-  border-color: $success-color;
-}
-
-.form_field.success select {
-  border: 2px solid $success-color;
-}
-
-.form_field small {
-  color: $error-color;
-  font-size: 9px;
-}
-
-.forgot_button {
+.forgot-button {
   @include btn;
   text-align: center;
   margin: 20px auto;

@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 <?php
 
 const LOGIN_ERROR_REQUIRED = "Veuillez renseigner ce champ";
@@ -39,8 +46,3 @@ if (isset($success_message)) {
     echo $success_message;
 }
 ?>
-
-
-
-
-

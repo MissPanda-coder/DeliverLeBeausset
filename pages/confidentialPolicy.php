@@ -4,9 +4,9 @@ include '../elementPage/head.php';
 include '../elementPage/navBar.php'; ?>
 
 
-<h4 class="text-secondary confidential_title">Politique de Confidentialité</h4>
-<div class=" text-secondary confidential_text">
-    <p class="confidential_update">Dernière mise à jour : 23/02/2024</p>
+<h4 class="text-secondary confidential-title">Politique de Confidentialité</h4>
+<div class=" text-secondary confidential-text">
+    <p class="confidential-update">Dernière mise à jour : 23/02/2024</p>
 
     <p> Votre vie privée est importante pour nous. Cette politique de confidentialité décrit quelles informations nous collectons, comment nous les utilisons, et les choix que vous avez concernant la manière dont vos données sont traitées.</p>
 

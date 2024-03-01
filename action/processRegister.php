@@ -14,15 +14,15 @@ const ERROR_PASSWORD_CONFIRM = "Le mot de passe ne correspond pas";
 
 $fields = [
     'name' => ['minLength' => 2, 'pattern' => '/^[a-zA-Z\s]+$/', 'error' => ERROR_NAME],
-    'first_name' => ['minLength' => 2, 'pattern' => '/^[a-zA-Z\s]+$/', 'error' => ERROR_FIRSTNAME],
+    'first-name' => ['minLength' => 2, 'pattern' => '/^[a-zA-Z\s]+$/', 'error' => ERROR_FIRSTNAME],
     'street_number' => ['pattern' => '/^\d+$/', 'error' => ERROR_STREETNUMBER],
-    'street_name' => ['minLength' => 2, 'pattern' => '/^[a-zA-Z\s]+$/', 'error' => ERROR_STREET],
-    'postal_code' => ['value' => '83330', 'error' => ERROR_POSTALCODE],
+    'street-name' => ['minLength' => 2, 'pattern' => '/^[a-zA-Z\s]+$/', 'error' => ERROR_STREET],
+    'postal-code' => ['value' => '83330', 'error' => ERROR_POSTALCODE],
     'city' => ['value' => 'LE BEAUSSET', 'error' => ERROR_CITY],
     'phone' => ['pattern' => '/^\d{10}$/', 'error' => ERROR_PHONE],
     'email' => ['filter' => FILTER_VALIDATE_EMAIL, 'error' => ERROR_EMAIL],
     'password' => ['minLength' => 8, 'pattern' => '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/', 'error' => ERROR_PASSWORD],
-    'passwordconfirm' => ['match' => 'password', 'error' => ERROR_PASSWORD_CONFIRM]
+    'password-confirm' => ['match' => 'password', 'error' => ERROR_PASSWORD_CONFIRM]
 ];
 
 $errors = [];
@@ -30,15 +30,15 @@ $errors = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_POST = filter_input_array(INPUT_POST, [
         'name' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-        'first_name' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-        'street_number' => FILTER_SANITIZE_NUMBER_INT,
-        'street_name' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-        'postal_code' => FILTER_SANITIZE_NUMBER_INT,
+        'first-name' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+        'street-num' => FILTER_SANITIZE_NUMBER_INT,
+        'street-name' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
+        'postal-code' => FILTER_SANITIZE_NUMBER_INT,
         'city' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
         'phone' => FILTER_SANITIZE_NUMBER_INT,
         'email' => FILTER_SANITIZE_EMAIL,
         'password' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-        'passwordconfirm' => FILTER_SANITIZE_FULL_SPECIAL_CHARS
+        'password-confirm' => FILTER_SANITIZE_FULL_SPECIAL_CHARS
     ]);
 
     foreach ($fields as $field => $options) {

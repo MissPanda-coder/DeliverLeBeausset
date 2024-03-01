@@ -1,15 +1,15 @@
 const form = document.querySelector("#registerForm");
 const togglePassword = document.querySelector("#togglePassword");
 const nameEl = document.forms.register.name;
-const firstNameEl = document.forms.register.first_name;
-const streetNumberEl = document.forms.register.street_number;
-const streetNameEl = document.forms.register.street_name;
-const postalCodeEl = document.forms.register.postal_code;
+const firstNameEl = document.forms.register["first-name"];
+const streetNumberEl = document.forms.register["street-num]"];
+const streetNameEl = document.forms.register["street-name"];
+const postalCodeEl = document.forms.register["postal-code"];
 const cityEl = document.forms.register.city;
 const phoneEl = document.forms.register.phone;
 const emailEl = document.forms.register.email;
 const passwordEl = document.forms.register.password;
-const confPassEl = document.forms.register.passwordconfirm;
+const confPassEl = document.forms.register["password-confirm"];
 const cgvEl = document.forms.register.cgv;
 
 document.querySelectorAll(".toggle-password").forEach(function (element) {
@@ -47,20 +47,20 @@ function isNameValid(name) {
 }
 
 // Fonction qui interdit le mot "root" et n'autorise que la saisie de lettres
-function isFirstNameValid(first_name) {
+function isFirstNameValid(firstName) {
   const re = /^(?!.*\broot\b)[a-zA-Z]+$/;
-  return re.test(first_name);
+  return re.test(firstName);
 }
 
 // Fonction qui autorise entre 1 et 4 chiffres et n'autorise que la saisie de chiffres
-function isStreetNbValid(street_number) {
+function isStreetNbValid(streetNb) {
   const re = /^\d{1,4}$/;
-  return re.test(street_number);
+  return re.test(streetNb);
 }
 
 // Fonction qui n'autorise que le code postal 83330 et rien d'autre
-function isPostalCodeValid(postal_code) {
-  return postal_code === "83330";
+function isPostalCodeValid(postalCode) {
+  return postalCode === "83330";
 }
 
 // Fonction qui n'autorise que la saisie de "LE BEAUSSET" et rien d'autre
@@ -156,15 +156,15 @@ export function checkStreetNb() {
   let valid = false;
   const min = 2,
     max = 4;
-  const street_number = streetNumberEl.value.trim();
-  if (!isRequired(street_number)) {
+  const streetNb = streetNumberEl.value.trim();
+  if (!isRequired(streetNb)) {
     showError(streetNumberEl, "Le champ ne peut pas être vide");
-  } else if (!isBetween(street_number.length, min, max)) {
+  } else if (!isBetween(streetNb.length, min, max)) {
     showError(
       streetNumberEl,
       `Le numéro de rue doit avoir entre ${min} et ${max} caractères.`
     );
-  } else if (!isStreetNbValid(street_number)) {
+  } else if (!isStreetNbValid(streetNb)) {
     showError(
       streetNumberEl,
       `Le numéro de rue ne doit contenir que des chiffres.`

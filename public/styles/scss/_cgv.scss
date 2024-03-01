@@ -9,35 +9,35 @@
     font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
-.cgv_title {
+.cgv-title {
     font-size: 2rem; 
     text-align: center;
     margin-top: 1.25rem; 
 }
 
-.cgv_update {
+.cgv-update {
     margin: 0.6rem 0; 
 }
 
-.preambule_subtitle {
+.preambule-subtitle {
     margin-left: 1.8rem;
 }
 
-.preambule_title-click,
-.preambule_subtitle {
+.preambule-title-click,
+.preambule-subtitle {
     text-decoration: none;
     color: inherit;
 }
 
-.preambule_title-click:hover,
-.preambule_subtitle:hover {
+.preambule-title-click:hover,
+.preambule-subtitle:hover {
     color: $c-purple; 
 }
 
-.preambule_title-click:visited,
-.preambule_subtitle:visited,
-.preambule_title-click:active,
-.preambule_subtitle:active {
+.preambule-title-click:visited,
+.preambule-subtitle:visited,
+.preambule-title-click:active,
+.preambule-subtitle:active {
     color: inherit;
     text-decoration: none;
 }
@@ -47,7 +47,7 @@ h5 {
     margin-top: 1.2rem; 
 }
 
-.preambule_last {
+.preambule-last {
     margin-bottom: 1.2rem; 
 }
 

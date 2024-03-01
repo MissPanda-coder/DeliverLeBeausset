@@ -3,7 +3,7 @@
 @import "_btn";
 
 #register{
- @include formLayoutRegister;
+ @include formLayout;
  position: fixed; 
  top: 50%; 
  left: 50%;
@@ -19,76 +19,27 @@
     padding: 10px 15px;
 }
 
-#registerForm h2 {
-    @include formTitle;
-}
-
-.form_field {
-     margin-bottom: 5px;
-     position:relative;
-
-}
-
-.form_field label {
-@include formFieldLabelRegister;
-}
-
-.form_field input, .form_field select {
-   @include formFieldInputSelectRegister;
-}
-
-.form_field input:focus, .form_field select:focus {
-    outline: none;
-}
-
-.form_field.error input {
-    border-color: $error-color;
-}
-.form_field.error select {
-  border : 2px solid $error-color;
-}
-
-.form_field.success input {
-    border-color: $success-color;
-}
-.form_field.success select {
-  border : 2px solid $success-color;
-}
-
-
-.form_field small {
-    color: $error-color;
-    font-size: 9px;
-}
-
-
 .field-icon-register {
-    position: absolute;
+  @include fieldIcon;
     transform: translateY(-50%);
-    top: 60px;
+    top: 53px;
     right: 35px;
-    z-index: 2;
-    color: black;
   }
-
 
   .form-field-checkobox{
     display: flex;
     flex-flow: row wrap;
   }
 
-
   .checkbox{
     display:inline-block;
     margin-right:7px;
   }
 
-
   .register-send-button {
     @include btn;
     margin: 15px 40%;
   
-
     &:hover {
       @include hover;
     }

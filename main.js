@@ -7,7 +7,7 @@ document.querySelectorAll(".toggle-password").forEach(function (element) {
   element.addEventListener("click", function () {
     this.classList.toggle("fa-eye-slash");
     this.classList.toggle("fa-eye");
-    const input = document.querySelector(".password_eye");
+    const input = document.querySelector(".password-eye");
     if (input.getAttribute("type") === "password") {
       input.setAttribute("type", "text");
     } else {
@@ -18,7 +18,7 @@ document.querySelectorAll(".toggle-password").forEach(function (element) {
 
 // LOG IN
 import { displayLogin } from "./js/logIn.js";
-document.querySelector(".login_button").addEventListener("click", function () {
+document.querySelector(".login-button").addEventListener("click", function () {
   displayLogin();
 });
 
@@ -69,7 +69,7 @@ document.forms.login.addEventListener("input", (e) => {
 //FORGOT PASSWORD
 import { displayForgot } from "./js/forgot.js";
 document
-  .querySelector(".forgot_password")
+  .querySelector(".forgot-password")
   .addEventListener("click", function () {
     displayForgot();
   });
@@ -77,7 +77,7 @@ document
 //REGISTER
 import { displayRegister } from "./js/register.js";
 document
-  .querySelector(".register_button")
+  .querySelector(".register-button")
   .addEventListener("click", function () {
     displayRegister();
   });
@@ -153,16 +153,16 @@ document.forms.register.addEventListener("input", (e) => {
     case "name":
       checkName();
       break;
-    case "first_name":
+    case "first-name":
       checkFirstName();
       break;
-    case "street_number":
+    case "street-number":
       checkStreetNb();
       break;
-    case "street_name":
+    case "street-name":
       checkStreetName();
       break;
-    case "postal_code":
+    case "postal-code":
       checkPostalCode();
       break;
     case "city":
@@ -191,7 +191,7 @@ document.forms.register.addEventListener("input", (e) => {
 
 //PRODUCTS
 function init() {
-  let iddepartmentLinks = document.querySelectorAll(".categories_button");
+  let iddepartmentLinks = document.querySelectorAll(".categories-button");
 
   iddepartmentLinks.forEach((e) => {
     e.addEventListener("click", () => {

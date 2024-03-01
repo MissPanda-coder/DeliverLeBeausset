@@ -1,5 +1,5 @@
 <footer class=" footer">
-        <div class="footer_links">
+        <div class="footer-links">
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="index.php">Accueil</a></li>
                 <li class="list-inline-item"><a href="shops">Boutiques</a></li>
