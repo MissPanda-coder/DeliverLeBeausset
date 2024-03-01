@@ -5,13 +5,13 @@ include '../elementPage/navBar.php';
 ?>
 
 
-
 <div class="product-container">
+<div class="row">
 
 
 </div>
 
-
+</div>
 <script src="js/showProducts.js"></script>
 <?php
 include '../elementPage/footer.php'; ?>

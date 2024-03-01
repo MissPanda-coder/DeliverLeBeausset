@@ -6,7 +6,7 @@ include '../elementPage/navBar.php';
 
 
 
-<div class="product-container-cart">
+<div class="row" id="product-container-cart">
 
 
 </div>

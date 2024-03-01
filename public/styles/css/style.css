@@ -710,6 +710,7 @@ h5, .h5 {
 }
 
 .confidential-update {
+  font-size: clamp(0.5rem, 3vw, 0.8rem);
   margin: 1rem auto;
 }
 
@@ -1110,15 +1111,25 @@ h5, .h5 {
 }
 
 .product-container {
-  width: 60%;
+  width: 90%;
   margin-top: 25px;
   margin-left: 20px;
 }
 
-.product-image,
-.product-details {
-  margin-left: 15px;
+.product-card {
+  min-width: 239px !important;
+  min-height: 260px !important;
+  padding: 10px 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.product-image {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
+  width: 80px !important; /* Largeur fixe de l'image */
+  height: auto !important; /* Hauteur fixe de l'image */
 }
 
 .cart {
@@ -1157,6 +1168,14 @@ h5, .h5 {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 767px) {
+  .product-card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
