@@ -621,12 +621,13 @@ header {
 }
 
 .cgv-title {
-  font-size: 2rem;
+  font-size: clamp(1.7rem, 5vw, 2rem);
   text-align: center;
-  margin-top: 1.25rem;
+  margin-top: 1.15rem;
 }
 
 .cgv-update {
+  font-size: clamp(0.5rem, 3vw, 0.8rem);
   margin: 0.6rem 0;
 }
 
@@ -666,6 +667,26 @@ h6, .h6 {
   font-size: 0.85rem;
 }
 
+/* RESPONSIVE */
+@media only screen and (max-width: 711px) {
+  h6, .h6 {
+    font-size: 0.85rem;
+  }
+  .presentation-img {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 712px) and (max-width: 768px) {
+  .container {
+    margin: 50px 0 50px 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    margin: 70px 0 74px 0;
+  }
+}
 #confidentialPolicy {
   width: 100%;
 }
