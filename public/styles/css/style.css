@@ -12,7 +12,9 @@
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -40,7 +42,9 @@
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -186,7 +190,9 @@ h1, .h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -283,7 +289,9 @@ h1, .h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -359,7 +367,9 @@ h1, .h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -386,6 +396,7 @@ header {
   align-items: center;
   font-family: "Roboto-Regular", sans-serif;
   height: auto;
+  width: 100%;
 }
 
 .navbar-logo img {
@@ -443,7 +454,9 @@ header {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -598,7 +611,9 @@ header {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -727,7 +742,9 @@ h5, .h5 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -861,7 +878,9 @@ h5, .h5 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -894,7 +913,9 @@ h5, .h5 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -969,7 +990,9 @@ h5, .h5 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -1001,7 +1024,9 @@ h5, .h5 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -1057,7 +1082,9 @@ h5, .h5 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -1090,7 +1117,9 @@ h5, .h5 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
@@ -1108,12 +1137,17 @@ h5, .h5 {
 #products {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-container {
   width: 90%;
   margin-top: 25px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .product-card {
@@ -1122,23 +1156,55 @@ h5, .h5 {
   padding: 10px 15px;
   margin-left: 10px;
   margin-right: 10px;
+  border: 1px solid rgb(146, 101, 218);
+  border-radius: 5%;
+}
+
+#card-div-title {
+  width: 100%;
+  height: 30px;
+  font-weight: 700;
+}
+
+.card-div-img {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .product-image {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 80px !important; /* Largeur fixe de l'image */
-  height: auto !important; /* Hauteur fixe de l'image */
+  width: 80px !important;
+  height: auto !important;
 }
 
-.cart {
-  display: block;
-  margin-left: 250px;
-  margin-bottom: 20px;
+#card-div-weight {
+  width: 100%;
+  height: 30px;
 }
 
-.btn-cart {
+#card-div-price {
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+}
+
+.card-div-button {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 50px;
+}
+
+.card-div-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.cart-button {
   width: auto;
   height: 40px;
   color: #ffffff;
@@ -1151,31 +1217,23 @@ h5, .h5 {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   background: rgb(146, 101, 218);
   background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
   border: none;
-  left: 550px;
-  bottom: 20px;
 }
-.btn-cart:before {
+.cart-button:before {
   height: 0%;
   width: 2px;
 }
-.btn-cart:hover {
+.cart-button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 767px) {
-  .product-card {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

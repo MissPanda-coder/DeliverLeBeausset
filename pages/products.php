@@ -6,7 +6,7 @@ include '../elementPage/navBar.php';
 
 
 <div class="product-container">
-<div class="row">
+<div class="row align-items-center" id="product-row">
 
 
 </div>

@@ -67,8 +67,9 @@ function displayProducts(products) {
   const container = document.querySelector(".row");
   let cardCount = 0; // Compteur de cartes dans la rangée actuelle
 
-  products.forEach(product => {
-    if (cardCount % 7 === 0) { // Crée une nouvelle rangée toutes les 7 cartes
+  products.forEach((product) => {
+    if (cardCount % 6 === 0) {
+      // Crée une nouvelle rangée toutes les 6 cartes
       const row = document.createElement("div");
       row.classList.add("row");
       container.appendChild(row);
@@ -80,12 +81,17 @@ function displayProducts(products) {
 
     // Titre du produit
     const titleDiv = document.createElement("div");
-    const titleText = document.createTextNode(`Titre du produit: ${product.shopsName} - ${product.productsname}`);
+    titleDiv.id = "card-div-title";
+    titleDiv.classList.add("text-secondary");
+    const titleText = document.createTextNode(
+      `${product.shopsName} - ${product.productsname}`
+    );
     titleDiv.appendChild(titleText);
     card.appendChild(titleDiv);
 
     // Image du produit
     const imageDiv = document.createElement("div");
+    imageDiv.classList.add("card-div-img");
     const image = document.createElement("img");
     image.src = `./public/img/products/${product.productsimg}`;
     image.alt = product.Productsname;
@@ -94,21 +100,33 @@ function displayProducts(products) {
 
     // Poids du produit
     const weightDiv = document.createElement("div");
-    const weightText = document.createTextNode(`Poids: ${product.productsweight} ${product.unitsname}`);
+    weightDiv.id = "card-div-weight"; 
+    weightDiv.classList.add("text-secondary");
+    const weightText = document.createTextNode(
+      `Poids: ${product.productsweight} ${product.unitsname}`
+    );
     weightDiv.appendChild(weightText);
     card.appendChild(weightDiv);
 
     // Prix du produit
     const priceDiv = document.createElement("div");
-    const priceText = document.createTextNode(`Prix: ${product.productsprice} ${product.euros}`);
+    priceDiv.id = "card-div-price";
+    priceDiv.classList.add("text-secondary");
+    const priceText = document.createTextNode(
+      `${product.productsprice} ${product.euros}`
+    );
     priceDiv.appendChild(priceText);
     card.appendChild(priceDiv);
 
     // Bouton
     const buttonDiv = document.createElement("div");
+    buttonDiv.classList.add("card-div-button");
     const button = document.createElement("button");
-    const buttonText = document.createTextNode("Ajouter au panier");
-    button.appendChild(buttonText);
+    button.classList.add("cart-button");
+    const img = document.createElement("img");
+    img.src = "./public/img/outils/panierb.png"; 
+    img.alt = "Bouton panier pour ajouter l'article au panier"; 
+    button.appendChild(img);
     buttonDiv.appendChild(button);
     card.appendChild(buttonDiv);
 
@@ -119,6 +137,5 @@ function displayProducts(products) {
     cardCount++;
   });
 }
-
 
 displayProducts(data);

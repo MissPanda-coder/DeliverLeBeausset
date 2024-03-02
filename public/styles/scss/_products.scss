@@ -4,51 +4,85 @@
 #products{
     position: relative;
     width:100%; 
+    display: flex;
+    flex-flow: column;
+    justify-content: center; 
+    align-items: center;
+
 }
 
 .product-container{
    width:90%;
    margin-top:25px;
-   margin-left:20px;
+   margin-left:10px;
+   margin-right: 10px;
 }
 
 .product-card {
-    min-width: 239px !important;
-    min-height: 260px !important;
-  padding: 10px 15px;
-  margin-left: 10px; 
-  margin-right: 10px;
+  min-width: 239px !important;
+  min-height: 260px !important;
+padding: 10px 15px;
+margin-left: 10px; 
+margin-right: 10px;
+border: 1px solid $c-purple;
+border-radius: 5%;
+}
+
+#card-div-title{
+    width: 100%;
+    height:30px;
+    font-weight: 700;
   }
 
-.product-image{
+  .card-div-img{
+    width: 100%;
+    height:100px;
+    display: flex;
+   justify-content: center;
+  }
+
+  .product-image{
     margin-left : auto;
     margin-right: auto;
     margin-top:20px;
-    width: 80px !important; /* Largeur fixe de l'image */
-  height: auto !important; /* Hauteur fixe de l'image */
- 
- 
-}
-
-.cart{
-    display: block;
-    margin-left : 250px;
-    margin-bottom: 20px;
-}
-
-.btn-cart{
-    @include btn;
-left :550px;
-bottom : 20px;
-}
-
-
-@media (max-width: 767px) {
-   
-    .product-card {
-      width: 100%; 
-      margin-left: 0; 
-      margin-right: 0; 
-      margin-bottom: 20px; 
-    }
+    width: 80px !important;
+  height: auto !important; 
   }
+
+#card-div-weight{
+    width: 100%;
+    height: 30px;
+}
+
+#card-div-price{
+    width: 100%;
+    height: 40px;
+    font-weight: 500;
+}
+
+.card-div-button{
+  display: flex;
+  justify-content: end;
+    width: 100%;
+    height:50px;
+}
+.card-div-button img{
+width: 20px;
+height: 20px;
+}
+
+.cart-button{
+    @include btn;
+
+}
+
+
+// @media (max-width: 767px) {
+   
+//     .product-card {
+//       width: 100%; 
+//       margin-left: 0; 
+//       margin-right: 0; 
+//       margin-bottom: 20px; 
+//     }
+//   }

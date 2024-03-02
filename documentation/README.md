@@ -45,9 +45,9 @@ Contrôleur : Les fichiers de routage dans le dossier routes agissent comme des 
 Arborescence/plan de classement des fichiers :
 - /DeliverLeBeausset
 - /action
-    - processForgotPassword_form.php
-    - processLogin_form.php
-    - processRegister_form.php
+    - processFPw.php
+    - processLogIn.php
+    - processRegister.php
     - user.php
 - /documentation 
     - README.md
@@ -55,20 +55,26 @@ Arborescence/plan de classement des fichiers :
     - footer.php
     - head.php
     - navBar.php
--/js
-    - form.js
+- /js
+    - admin.js
+    - cart.js
+    - forgot.js   
+    - formLogIn.js
+    - formRegister.js
     - hamburger.js
     - login.js
-    - register.js       
+    - register.js      
+    - showProducts.js 
 - /node_modules
--/pages  
+- /pages  
     - about.php
     - admin.php
+    - cart.php
     - cgv.php
     - condifendialPolicy.php
+    - products.php
     - shops.php
-
-    - /public
+- /public
         - /favicon
         -/fonts
         - /img
@@ -83,9 +89,9 @@ Arborescence/plan de classement des fichiers :
             - _form.scss
             - _home.scss
             - _login.scss
-            - _navabr.scss
-            - _password.scss
+            - _navbar.scss
             - _pdc.scss
+            - _products.scss
             - _register.scss
             - _shops.scss
             - _variables.scss
@@ -96,12 +102,15 @@ Arborescence/plan de classement des fichiers :
         - delete.js
         - post.js
 - .gitignore
--.htaccess
+- .htaccess
 - app.js
-- index.html
+- index.php
 - package-lock.json
 - package.json
+- server.js
 
+
+Méthodologie BEM pour le nommage des classes et IDs : Dans le cadre du développement du projet Deliver Le Beausset, nous avons adopté la méthodologie BEM (Block, Element, Modifier) pour le nommage cohérent et structuré de nos classes CSS et IDs HTML. La méthodologie BEM offre une approche modulaire et sémantique, ce qui facilite la compréhension et la maintenance du code CSS. Chaque classe est nommée en fonction de son rôle et de son contexte dans l'interface utilisateur, ce qui favorise une meilleure organisation et évite les conflits de noms. De plus, l'utilisation de BEM facilite la collaboration au sein de l'équipe de développement en fournissant une structure claire et prévisible pour l'architecture CSS du projet.
 
 
 Description de l'API :
@@ -119,12 +128,12 @@ Paramètres requis ou facultatifs : Certains endpoints exigent des paramètres o
 Réponses attendues : Les réponses de l'API sont au format JSON, fournissant des données structurées sur les produits, les utilisateurs, les commandes, etc.
 
 Sécurité :
-Mesures de sécurité : L'API met en place des mesures de sécurité telles que l'authentification des utilisateurs, la gestion des autorisations d'accès aux endpoints sensibles, et la sécurisation des données sensibles lors des transactions.
+Mesures de sécurité : L'API met en place des mesures de sécurité telles que l'authentification des utilisateurs (via une seconde base de données userdeliver), la gestion des autorisations d'accès aux endpoints sensibles.
 
 Authentification requise : une authentification est requise pour accéder à certaines parties de l'API, notamment pour passer des commandes ou accéder aux informations personnelles de l'utilisateur.
 
 Exemples d'utilisation :
-Exemples d'utilisation : Les développeurs peuvent interagir avec l'API en envoyant des requêtes HTTPS aux endpoints appropriés, par exemple, en utilisant POST pour passer une commande, GET pour récupérer les détails d'un produit, ou PUT pour mettre à jour les informations du profil utilisateur.
+Exemples d'utilisation : les administrateurs peuvent interagir avec l'API en envoyant des requêtes HTTPS aux endpoints appropriés, par exemple, en utilisant POST pour passer une commande, GET pour récupérer les détails d'un produit, ou PUT pour mettre à jour les informations du profil utilisateur.
 
 Interactions avec l'API : Les interactions avec l'API peuvent être réalisées à l'aide de clients HTTPS tels que Postman, facilitant ainsi le test et le développement.
 
