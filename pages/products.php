@@ -14,11 +14,11 @@ include '../elementPage/navBar.php';
 
         </div>
         <div class="cart-footer">
-            <div class="total">
-                Total (0 items): $0
+            <div class="total text-secondary">
+               
             </div>
             <div class="checkout">
-                Proceed to checkout
+                Procéder au paiement
             </div>
         </div>
     </div>

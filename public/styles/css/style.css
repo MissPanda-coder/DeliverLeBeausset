@@ -1136,7 +1136,7 @@ h5, .h5 {
 
 .products-cart {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   margin: 30px 20px 0 20px;
 }
 
@@ -1147,11 +1147,6 @@ h5, .h5 {
 .row {
   width: 100%;
   margin: 0 !important;
-}
-
-.cart-part {
-  width: 30%;
-  min-width: 30%;
 }
 
 .product-card {
@@ -1229,6 +1224,7 @@ h5, .h5 {
   background: rgb(146, 101, 218);
   background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
   border: none;
+  margin-left: 10px;
 }
 .btn-card:before {
   height: 0%;
@@ -1238,16 +1234,20 @@ h5, .h5 {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
-.cart-header {
+.cart-part {
+  width: 30%;
+  min-width: 30%;
+  background-color: rgb(204, 199, 199);
+}
+
+.cart-container {
   display: flex;
-  justify-content: space-around;
   padding: 10px 0;
+  width: 100%;
 }
 
 .cart-items {
-  max-height: calc(100vh - 247px);
-  overflow-y: auto;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 .cart-item {
@@ -1256,17 +1256,8 @@ h5, .h5 {
   padding: 10px 0;
 }
 
-.cart-item div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .cart-item .item-info {
-  flex: 1;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 0 10px 10px 0;
-  padding: 10px;
+  width: 140px;
 }
 
 .cart-item .item-info:hover {
@@ -1275,20 +1266,23 @@ h5, .h5 {
 }
 
 .cart-item .item-info img {
-  width: 75px;
+  width: 50px;
+  height: 50px;
 }
 
 .cart-item .unit-price {
-  flex: 1;
+  width: 100px;
   font-size: 1.2rem;
 }
 
 .cart-item .units {
-  flex: 1;
+  width: 120px;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-.cart-item .units .number {
-  margin: 0 10px;
+.number {
+  width: 27px;
   font-size: 1.2rem;
 }
 
@@ -1304,8 +1298,6 @@ h5, .h5 {
 .cart-footer {
   min-width: 400px;
   flex-grow: 1;
-  background-color: rgb(223, 159, 242);
-  border-left: 1px solid #61DAFB;
 }
 
 .cart-footer div {
@@ -1321,10 +1313,77 @@ h5, .h5 {
 }
 
 .cart-footer .checkout {
-  background-color: rgb(146, 101, 218);
+  width: auto;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background: rgb(146, 101, 218);
+  background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
+  border: none;
   cursor: pointer;
 }
+.cart-footer .checkout:before {
+  height: 0%;
+  width: 2px;
+}
+.cart-footer .checkout:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
 
+/* RESPONSIVE */
+@media only screen and (max-width: 711px) {
+  .products-cart {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5px 20px 0 5px;
+  }
+  .product-container {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .cart-part {
+    width: 100%;
+    min-width: 100%;
+    background-color: rgb(204, 199, 199);
+    justify-content: center;
+    align-items: center;
+  }
+  .product-card {
+    width: 239px !important;
+    height: 260px !important;
+    padding: 10px 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 1px solid rgb(146, 101, 218);
+    border-radius: 5%;
+  }
+}
+@media only screen and (min-width: 712px) and (max-width: 768px) {
+  .container {
+    margin: 50px 0 50px 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    margin: 70px 0 74px 0;
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

@@ -102,7 +102,7 @@ function renderSubtotal() {
   });
 
   const totalEl = document.querySelector(".total");
-  totalEl.innerHTML = `Total (${totalItems} items): $${totalPrice.toFixed(2)}`;
+  totalEl.innerHTML = `Total (${totalItems} articles): ${totalPrice.toFixed(2)}€`;
 }
 
 function renderCartItems() {
@@ -113,24 +113,25 @@ function renderCartItems() {
   cartContainer.innerHTML = "";
 
   if (cart.length === 0) {
-    cartItemsEl.innerHTML = "<p>Your cart is empty.</p>";
+    cartItemsEl.innerHTML = "<p>Votre panier est vide.</p>";
   } else {
     cart.forEach((item) => {
       const cartItem = document.createElement("div");
       cartItem.classList.add("cart-item");
 
       cartItem.innerHTML = `
+    
         <div class="item-info" onclick="removeItemFromCart(${item.id})">
-            <img src="./public/img/products/${item.img}" alt="${item.name}">
-            <h4>${item.name}</h4>
+            <p>${item.shop} </p>
+            <h5 class="text-secondary">${item.name}</h5>
            
         </div>
         <div class="unit-price">
-            <small>$</small>${item.price}
+            <small class="text-secondary"></small>${item.price} ${item.unitprice}
         </div>
         <div class="units">
             <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
-            <div class="number">${item.numberOfUnits}</div>
+            <div class="number "text-secondary">${item.numberOfUnits}</div>
             <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
         </div>
       `;
