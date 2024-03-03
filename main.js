@@ -22,11 +22,7 @@ document.querySelector(".login-button").addEventListener("click", function () {
   displayLogin();
 });
 
-
-import {
-  checkEmailLogin,
-  checkPassLogin,
-} from "./js/formLogIn.js";
+import { checkEmailLogin, checkPassLogin } from "./js/formLogIn.js";
 
 document.forms.login.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -34,9 +30,7 @@ document.forms.login.addEventListener("submit", (e) => {
   let emailloginOk = checkEmailLogin();
   let isPasslogiinOk = checkPassLogin();
 
-  let isFormLoginValid =
-  emailloginOk &&
-  isPasslogiinOk
+  let isFormLoginValid = emailloginOk && isPasslogiinOk;
 
   if (isFormLoginValid) {
     console.log("Tout est Ok pour l'envoi");
@@ -98,7 +92,6 @@ import {
   checkCgv,
 } from "./js/formRegister.js";
 
-
 document.forms.register.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -137,11 +130,11 @@ document.forms.register.addEventListener("submit", (e) => {
 const debounce = (fn, delay = 500) => {
   let timeoutId;
   return (...args) => {
-    // cancel the previous timer
+    
     if (timeoutId) {
       clearTimeout(timeoutId);
     }
-    // setup a new timer
+   
     timeoutId = setTimeout(() => {
       fn.apply(null, args);
     }, delay);
@@ -216,40 +209,3 @@ function fetchProducts(url) {
 }
 
 init();
-
-//CART NAVBAR
-// const cart = new Cart();
-// const countElement = document.createElement("span");
-// countElement.classList.add("count-nb");
-// const navBar = document.querySelector(".cart-span");
-// navBar.appendChild(countElement);
-
-
-// const addToCartButtons = document.querySelectorAll(".btn-cart");
-// addToCartButtons.forEach((button) => {
-//   button.addEventListener("click", (event) => {
- 
-//     const productId = event.target.dataset.productId;
-//     const productName = event.target.dataset.productName;
-//     const productPrice = parseFloat(event.target.dataset.productPrice);
-
-  
-//     const product = {
-//       id: productId,
-//       name: productName,
-//       price: productPrice,
-//       quantity: 1
-//     };
-
-//     cart.addToCart(product);
-
-    
-//     const cartItemCount = cart.getNumberProduct();
-//     if (cartItemCount > 0) {
-//       countElement.textContent = cartItemCount;
-//       countElement.style.display = "block";
-//     } else {
-//       countElement.style.display = "none";
-//     }
-//   });
-// });

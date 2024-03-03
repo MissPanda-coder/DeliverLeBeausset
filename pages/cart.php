@@ -6,12 +6,11 @@ include '../elementPage/navBar.php';
 
 
 
-<div class="row" id="product-container-cart">
+<div class="row" id="cart-container">
 
 
 </div>
 
 
-<script src="js/cart.js"></script>
 <?php
 include '../elementPage/footer.php'; ?>

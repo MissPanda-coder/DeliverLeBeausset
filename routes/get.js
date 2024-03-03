@@ -108,7 +108,7 @@ router.get("/productsbydepartment/:shopId/:departmentId", (req, res) => {
 router.get("/products/:departmentId", (req, res) => {
   const departmentId = req.params.departmentId;
   db.query(
-    `SELECT products.productsname,products.productsimg, shops.shopsName, products.productsweight,units.unitsname, products.productsdescription, products.productsprice, products.euros FROM products
+    `SELECT products.idproducts,products.productsname,products.productsimg, shops.shopsName, products.productsweight,units.unitsname, products.productsdescription, products.productsprice, products.euros FROM products
     JOIN units ON products.units_idunits = units.idunits
         JOIN shops_has_department ON shops_has_department.products_idproducts = products.idproducts
         JOIN shops ON shops_has_department.shops_idshops = shops.idshops

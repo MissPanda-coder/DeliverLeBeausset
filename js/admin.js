@@ -1,10 +1,8 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const entitySelect = document.getElementById("entitySelect");
   const actionSelect = document.getElementById("actionSelect");
   const formContainer = document.getElementById("formContainer");
 
-  // Définition des champs pour chaque entité
   const entityFields = {
     stores: [
       "name",
@@ -44,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function loadForm(entity, action) {
-    // Suppression du formulaire précédent s'il existe
     formContainer.innerHTML = "";
 
     const form = document.createElement("form");

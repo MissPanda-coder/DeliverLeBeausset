@@ -4,9 +4,8 @@ export function displayForgot() {
   const register = document.querySelector("#register");
 
   if (forgot.style.display === "none" || forgot.style.display === "") {
-   
-    forgot.style.display = "block"; 
-    loginForm.style.display = "none"; 
-    register.style.display = "none"; 
-  } 
+    forgot.style.display = "block";
+    loginForm.style.display = "none";
+    register.style.display = "none";
+  }
 }

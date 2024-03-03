@@ -12,7 +12,9 @@
             <li><a href="index.php">Accueil</a></li>
             <li><a href="shops">Boutiques</a></li>
             <li><a href="about">A propos</a></li>
-            <li><button class="login-button" href="login">Identifiez-vous</button></li>
+            <li><button class="login-button" href="login">
+                Se connecter
+            </button></li>
             <a href="cart" class="cart-span"><img class="cart-img" src="./public/img/outils/panierb.png" alt="image d'un panier pour passer commande"></a>
         </ul>
     </nav>

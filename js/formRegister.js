@@ -40,41 +40,35 @@ function isBetween(length, min, max) {
     return true;
   }
 }
-// J'ai besoin d'une fonction qui interdit le mot "root"et qui n'autorise que la saisie de lettre
+
 function isNameValid(name) {
   const re = /^(?!.*\broot\b)[a-zA-Z]+$/;
   return re.test(name);
 }
 
-// Fonction qui interdit le mot "root" et n'autorise que la saisie de lettres
 function isFirstNameValid(firstName) {
   const re = /^(?!.*\broot\b)[a-zA-Z]+$/;
   return re.test(firstName);
 }
 
-// Fonction qui autorise entre 1 et 4 chiffres et n'autorise que la saisie de chiffres
 function isStreetNbValid(streetNb) {
   const re = /^\d{1,4}$/;
   return re.test(streetNb);
 }
 
-// Fonction qui n'autorise que le code postal 83330 et rien d'autre
 function isPostalCodeValid(postalCode) {
   return postalCode === "83330";
 }
 
-// Fonction qui n'autorise que la saisie de "LE BEAUSSET" et rien d'autre
 function isCityValid(city) {
   return city === "LE BEAUSSET";
 }
 
-// Fonction qui n'autorise que la saisie de chiffres pour le numéro de téléphone, qui doit commencer par 0 et comporter 10 chiffres
 function isPhoneValid(phone) {
   const re = /^0\d{9}$/;
   return re.test(phone);
 }
 
-// J'ai besoin d'une fonction pour valider le format email ainsi qu'interdire les entrées de type "@yopmail.com"
 function isValidEmail(email) {
   const regex =
     /^(?!.*@yopmail\.com$)[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -86,24 +80,22 @@ function isPasswordValid(password) {
   return re.test(password);
 }
 
-//j'ai besoin d'une fonction qui permette de vérifier que la case cgv est cochée
 function isCgvValid(cgvCheckbox) {
   return cgvCheckbox.checked;
 }
 
-// J'ai besoin d'une fonction qui permette d'afficher les erreurs en rouge
 function showError(input, message) {
   const formField = input.parentElement;
-  formField.classList.remove("success"); 
-  formField.classList.add("error"); 
+  formField.classList.remove("success");
+  formField.classList.add("error");
   const errorEl = formField.querySelector("small");
   errorEl.textContent = message;
 }
-// J'ai besoin d'une fonction qui permette d'afficher l'element valide en vert
+
 function showSuccess(input) {
   const formField = input.parentElement;
-  formField.classList.remove("error"); // class css
-  formField.classList.add("success"); // class css
+  formField.classList.remove("error");
+  formField.classList.add("success");
   const errorEl = formField.querySelector("small");
   errorEl.textContent = "";
 }
@@ -112,7 +104,7 @@ export function checkName() {
   let valid = false;
   const min = 2,
     max = 25;
-  const name = nameEl.value.trim(); // permet de supprimer les espaces
+  const name = nameEl.value.trim();
   if (!isRequired(name)) {
     showError(nameEl, "Le champ ne peut pas être vide");
   } else if (!isBetween(name.length, min, max)) {
@@ -227,9 +219,9 @@ export function checkPhone() {
     showSuccess(phoneEl);
     return true;
   }
-};
+}
 
-export function checkEmail(){
+export function checkEmail() {
   let valid = false;
   const email = emailEl.value.trim();
   if (!isRequired(email)) {
@@ -244,7 +236,7 @@ export function checkEmail(){
     valid = true;
   }
   return valid;
-};
+}
 export function checkDob() {
   let valid = false;
   const dobval = dobEl.value;
@@ -264,7 +256,7 @@ export function checkDob() {
     valid = true;
   }
   return valid;
-};
+}
 export function checkPass() {
   let valid = false;
   const pass = passwordEl.value.trim();
@@ -280,7 +272,7 @@ export function checkPass() {
     valid = true;
   }
   return valid;
-};
+}
 export function confPass() {
   let valid = false;
   const pass = passwordEl.value.trim();
@@ -294,7 +286,7 @@ export function confPass() {
     valid = true;
   }
   return valid;
-};
+}
 export function checkCgv() {
   const cgvCheckbox = cgvEl;
   if (!isCgvValid(cgvCheckbox)) {
@@ -307,5 +299,4 @@ export function checkCgv() {
     showSuccess(cgvEl);
     return true;
   }
-};
-
+}

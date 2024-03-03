@@ -23,22 +23,21 @@ function isPasswordValid(password) {
 
 function showError(input, message) {
   const formField = input.parentElement;
-  formField.classList.remove("success"); 
-  formField.classList.add("error"); 
+  formField.classList.remove("success");
+  formField.classList.add("error");
   const errorEl = formField.querySelector("small");
   errorEl.textContent = message;
 }
 
 function showSuccess(input) {
   const formField = input.parentElement;
-  formField.classList.remove("error"); 
-  formField.classList.add("success"); 
+  formField.classList.remove("error");
+  formField.classList.add("success");
   const errorEl = formField.querySelector("small");
   errorEl.textContent = "";
 }
 
-
-export function checkEmailLogin(){
+export function checkEmailLogin() {
   let valid = false;
   const email = emailEl.value.trim();
   if (!isRequired(email)) {
@@ -53,7 +52,7 @@ export function checkEmailLogin(){
     valid = true;
   }
   return valid;
-};
+}
 
 export function checkPassLogin() {
   let valid = false;
@@ -70,7 +69,4 @@ export function checkPassLogin() {
     valid = true;
   }
   return valid;
-};
-
-
-
+}
