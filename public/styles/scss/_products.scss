@@ -84,6 +84,12 @@
     background-color: rgb(204, 199, 199);
 }
 
+
+.cart-title {
+    border-bottom: 1px solid $c-purple;
+    margin-top:25px !important;
+    
+}
 .cart-container {
     display: flex;
     padding: 10px 0;
@@ -132,10 +138,12 @@ margin: auto;
 .number {
     width:27px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .btn-plus, .btn-minus {
   @include qtyBtn;
+  color: $c-white;
 }
 
 .cart-footer {
@@ -145,6 +153,7 @@ margin: auto;
 }
 
 .cart-footer div {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,15 +161,15 @@ margin: auto;
     font-size: 1.3rem;
 }
 
-.cart-footer .subtotal {
-    background-color: white;
+.cart-footer .total {
+   
+    border-top: 1px solid $c-purple;
 }
 
-.cart-footer .checkout {
-    @include btn;
-    
-}
 
+.checkout-btn {
+    @include btn; 
+}
 
 /* RESPONSIVE */
 @media only screen and (max-width: 711px) { 

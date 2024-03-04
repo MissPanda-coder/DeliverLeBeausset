@@ -24,7 +24,7 @@ function createProductCard(product) {
   card.classList.add("product-card", "mb-5", "col-md-3");
 
   card.innerHTML = `
-    
+
       <div id="card-div-title">
           <p class="text-secondary">${product.shopsName} - ${product.productsname}</p>
       </div>
@@ -113,7 +113,7 @@ function renderCartItems() {
   cartContainer.innerHTML = "";
 
   if (cart.length === 0) {
-    cartItemsEl.innerHTML = "<p>Votre panier est vide.</p>";
+    cartItemsEl.innerHTML = "<p>Votre panier est vide</p>";
   } else {
     cart.forEach((item) => {
       const cartItem = document.createElement("div");
@@ -131,7 +131,7 @@ function renderCartItems() {
         </div>
         <div class="units">
             <div class="btn-minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
-            <div class="number "text-secondary">${item.numberOfUnits}</div>
+            <div id="number" class="text-secondary">${item.numberOfUnits}</div>
             <div class="btn-plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
         </div>
       `;

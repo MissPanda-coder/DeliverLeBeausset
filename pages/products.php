@@ -5,11 +5,13 @@ include '../elementPage/navBar.php';
 ?>
 
 <div class="products-cart">
+   
     <div id="product-container" class="product-container">
 
     </div>
 
     <div class="cart-part">
+    <h4 class="cart-title text-secondary">Votre panier</h4>
         <div id="cart-container" class="cart-container">
 
         </div>
@@ -18,7 +20,7 @@ include '../elementPage/navBar.php';
                
             </div>
             <div class="checkout">
-                Procéder au paiement
+                <button class= "checkout-btn">Procéder au paiement</button>
             </div>
         </div>
     </div>

@@ -1240,6 +1240,11 @@ h5, .h5 {
   background-color: rgb(204, 199, 199);
 }
 
+.cart-title {
+  border-bottom: 1px solid rgb(146, 101, 218);
+  margin-top: 25px !important;
+}
+
 .cart-container {
   display: flex;
   padding: 10px 0;
@@ -1286,6 +1291,7 @@ h5, .h5 {
 .number {
   width: 27px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .btn-plus, .btn-minus {
@@ -1298,6 +1304,7 @@ h5, .h5 {
   margin: auto;
   text-align: center;
   line-height: 22px;
+  color: #ffffff;
 }
 
 .cart-footer {
@@ -1313,11 +1320,11 @@ h5, .h5 {
   font-size: 1.3rem;
 }
 
-.cart-footer .subtotal {
-  background-color: white;
+.cart-footer .total {
+  border-top: 1px solid rgb(146, 101, 218);
 }
 
-.cart-footer .checkout {
+.checkout-btn {
   width: auto;
   height: 40px;
   color: #ffffff;
@@ -1339,11 +1346,11 @@ h5, .h5 {
   background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
   border: none;
 }
-.cart-footer .checkout:before {
+.checkout-btn:before {
   height: 0%;
   width: 2px;
 }
-.cart-footer .checkout:hover {
+.checkout-btn:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
