@@ -1252,12 +1252,12 @@ h5, .h5 {
 
 .cart-item {
   display: flex;
-  justify-content: space-around;
   padding: 10px 0;
+  align-items: center;
 }
 
 .cart-item .item-info {
-  width: 140px;
+  width: 160px;
 }
 
 .cart-item .item-info:hover {
@@ -1273,12 +1273,14 @@ h5, .h5 {
 .cart-item .unit-price {
   width: 100px;
   font-size: 1.2rem;
+  margin: auto;
 }
 
 .cart-item .units {
   width: 120px;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .number {
@@ -1286,13 +1288,16 @@ h5, .h5 {
   font-size: 1.2rem;
 }
 
-.cart-item .units .btn {
-  width: 20px;
-  height: 20px;
+.btn-plus, .btn-minus {
+  width: 22px;
+  height: 22px;
   background-color: #aba9a9;
   border-radius: 50%;
   font-weight: bold;
   cursor: pointer;
+  margin: auto;
+  text-align: center;
+  line-height: 22px;
 }
 
 .cart-footer {
@@ -1333,7 +1338,6 @@ h5, .h5 {
   background: rgb(146, 101, 218);
   background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
   border: none;
-  cursor: pointer;
 }
 .cart-footer .checkout:before {
   height: 0%;

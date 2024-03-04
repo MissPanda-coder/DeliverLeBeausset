@@ -48,3 +48,15 @@
 .btnSearch{
     @include btn;
 }
+
+@mixin qtyBtn{
+    width: 22px;
+    height: 22px;
+    background-color: $c-brown;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    line-height: 22px;
+}
