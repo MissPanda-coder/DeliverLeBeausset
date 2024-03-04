@@ -22,19 +22,23 @@
     flex: 1;
   }
 
-
 .searchBar-text{
   flex: 3;
 }
 
 .searchBar-glass{
     flex: 0;
+    background-color: $c-purple;
   }
 
 .searchBar-select {
-    margin: 0!important;
     padding: 0 !important;
-   
+    background-color: $c-purple;
+}
+
+.glass{
+    background-color: $c-purple;
+    color:$c-white;
 }
 
 #searchBar-input{
@@ -52,7 +56,8 @@
 #categories{
     border: none;
     margin-top:0.2rem;
- 
+    background-color: $c-purple;
+    color:$c-white;
 }
 
 #categories:focus{
@@ -61,6 +66,7 @@
 
 .search-button{
     border:none;
+    background-color: $c-purple;
     }
 
     .categories-button{

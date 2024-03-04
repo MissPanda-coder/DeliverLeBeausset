@@ -234,11 +234,17 @@ h1, .h1 {
 
 .searchBar-glass {
   flex: 0;
+  background-color: rgb(146, 101, 218);
 }
 
 .searchBar-select {
-  margin: 0 !important;
   padding: 0 !important;
+  background-color: rgb(146, 101, 218);
+}
+
+.glass {
+  background-color: rgb(146, 101, 218);
+  color: #ffffff;
 }
 
 #searchBar-input {
@@ -255,6 +261,8 @@ h1, .h1 {
 #categories {
   border: none;
   margin-top: 0.2rem;
+  background-color: rgb(146, 101, 218);
+  color: #ffffff;
 }
 
 #categories:focus {
@@ -263,6 +271,7 @@ h1, .h1 {
 
 .search-button {
   border: none;
+  background-color: rgb(146, 101, 218);
 }
 
 .categories-button {

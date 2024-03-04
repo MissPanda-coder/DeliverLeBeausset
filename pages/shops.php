@@ -8,7 +8,7 @@ include '../elementPage/navBar.php'; ?>
 <div class="search-wrapper">
   <div id="searchBar" class="searchBar-container">
     <div class="searchBar-select">
-      <select class="text-secondary" id="categories" name="categories">
+      <select id="categories" name="categories">
         <option selected disabled value="">Catégories</option>
         <option>Fruits et légumes</option>
         <option>Apéritif</option>
@@ -23,12 +23,11 @@ include '../elementPage/navBar.php'; ?>
     </div>
     <div class="searchBar-glass">
       <button type="submit" class="search-button">
-        <img src="./public/img/outils/loupe.png" class="glass">
+        <img src="./public/img/outils/loupeb.png" class="glass">
       </button>
     </div>
   </div>
 </div>
-
 
 
 <div class="container">
